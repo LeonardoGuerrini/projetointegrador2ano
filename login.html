@@ -22,7 +22,7 @@
                 <a class="nav-link" href="#">Meu Carrinho</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">Minha Conta</a>
+                <a class="nav-link" href="#">Minha Conta</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Autoajuda</a>
@@ -48,54 +48,13 @@
         </div>
       </nav>
 
-    <section class="principal">
-      <div class="divBannerDesconto">
-        <a href="#"><img src="Img/bannerdesconto.jpg" alt="Banner Desconto" width="100%" id="bannerdesconto"></a>
-      </div>
-      <div class="divPrincipal">
-        <p class="pCards">Mais Vendidos:</p>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <img src="Img/berserk.svg" class="d-block w-10 " alt="Berserk Volume 1">
-              <div class="carousel-caption d-md-block">
-                <h5>Berserk Vol. 1</h5>
-                <p>R$34,90</p>
-              </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <img src="Img/asutilarte.svg" class="d-block w-10" alt="A Sútil Arte de Ligar o F*da-se">
-              <div class="carousel-caption d-md-block">
-                <h5>A Sútil Arte de Ligar o F*da-se</h5>
-                <p>R$41,27</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="Img/fahrenheit451.svg" class="d-block w-10" alt="Fahrenheit 451">
-              <div class="carousel-caption d-md-block">
-                <h5>Fahrenheit 451</h5>
-                <p>R$38,13</p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-
+      <form action="login.php" method="post">
+        <label for="usuario">Usuário</label>
+        <input type="text" name="usuario" id="usuario">
+        <label for="senha">Senha</label>
+        <input type="password" name="senha" id="senha">
+        <input type="submit" value="Entrar">
+      </form>
       
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>

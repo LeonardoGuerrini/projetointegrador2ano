@@ -22,12 +22,17 @@
         margin-left: auto;
         margin-right: auto;
         width: 25%;
-        margin-bottom: 40%;
+        margin-bottom: 50%;
         border: 2px solid black;
     }
 
     .carousel-dark .carousel-caption{
         color: rgb(0, 0, 0);
+    }
+
+    .h2Cards{
+        text-align: center;
+        margin-top: 20px;
     }
 }
 
@@ -70,4 +75,20 @@
 .btn-outline-success:active{
     background-color: black;
     color: black;
+}
+
+.btnComprarCard{
+    border: 1px solid black;
+    color: white !important;
+    background-color: black;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.classComprarCard{
+    color: white !important;
+}
+
+a{
+    text-decoration: none;
 }

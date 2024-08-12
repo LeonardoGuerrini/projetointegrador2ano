@@ -12,7 +12,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Wissen Livraria</a>
+          <a class="navbar-brand" href="index.html">Wissen</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -52,7 +52,7 @@
       <div class="divBannerDesconto">
         <a href="#"><img src="Img/bannerdesconto.jpg" alt="Banner Desconto" width="100%" id="bannerdesconto"></a>
       </div>
-      <h2 class="h2Cards">Mais Vendidos</h2>
+      <h2 class="h2Cards">Promoções</h2>
       <div class="divPrincipal">
         <div id="carouselExampleDark" class="carousel carousel-dark slide">
           <div class="carousel-indicators">
@@ -65,24 +65,24 @@
               <img src="Img/berserk.svg" class="d-block w-10 " alt="Berserk Volume 1">
               <div class="carousel-caption d-md-block">
                 <h5>Berserk Vol. 1</h5>
-                <p>R$34,90</p>
-                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar</a></button>
+                <p>R$29,99</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
               </div>
             </div>
             <div class="carousel-item" data-bs-interval="2000">
               <img src="Img/asutilarte.svg" class="d-block w-10" alt="A Sútil Arte de Ligar o F*da-se">
               <div class="carousel-caption d-md-block">
                 <h5>A Sútil Arte de Ligar o F*da-se</h5>
-                <p>R$41,27</p>
-                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar</a></button>
+                <p>R$34,99</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
               </div>
             </div>
             <div class="carousel-item">
               <img src="Img/fahrenheit451.svg" class="d-block w-10" alt="Fahrenheit 451">
               <div class="carousel-caption d-md-block">
                 <h5>Fahrenheit 451</h5>
-                <p>R$38,13</p>
-                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar</a></button>
+                <p>R$32,99</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
               </div>
             </div>
           </div>
@@ -98,8 +98,107 @@
       </div>
     </section>
 
+    <div id="bannerMensagem">
+      <span class="material-symbols-outlined americaSul">south_america</span>
+      <div id="bannerMensagemTexto">
+        <h6>Entregamos em todo o Brasil</h6>
+        <p>Consulte o prazo para sua cidade</p>
+      </div>
 
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </div>
+
+    <section class="categorias">
+      <h2 class="h2Cards">Mais Vendidos</h2>
+      <div class="divCategorias">
+        <div id="carouselCategorias" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCategorias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCategorias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCategorias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="Img/oprincipe.svg" class="d-block w-10 " alt="Berserk Volume 1">
+              <div class="carousel-caption d-md-block">
+                <h5>Pequeno Príncipe</h5>
+                <p>R$31,29</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Img/itacoisa.svg" class="d-block w-10" alt="A Sútil Arte de Ligar o F*da-se">
+              <div class="carousel-caption d-md-block">
+                <h5> It: A coisa - Stephen King</h5>
+                <p>R$71,80</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Img/fahrenheit451.svg" class="d-block w-10" alt="Fahrenheit 451">
+              <div class="carousel-caption d-md-block">
+                <h5>Fahrenheit 451</h5>
+                <p>R$32,99</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategorias" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCategorias" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <h2 class="h2Cards">Mangás</h2>
+      <div class="divCategorias">
+        <div id="carouselCategorias2" class="carousel carousel-dark slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselCategorias2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselCategorias2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselCategorias2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="Img/chainsawmanvol1.svg" class="d-block w-10 " alt="Berserk Volume 1">
+              <div class="carousel-caption d-md-block">
+                <h5>Chainsaw Man Vol. 1</h5>
+                <p>R$27,70</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="Img/berserk.svg" class="d-block w-10" alt="A Sútil Arte de Ligar o F*da-se">
+              <div class="carousel-caption d-md-block">
+                <h5>Berserk Vol. 1</h5>
+                <p>R$29,99</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Img/demonslayervol1.svg" class="d-block w-10" alt="Fahrenheit 451">
+              <div class="carousel-caption d-md-block">
+                <h5>Demon Slayer Vol. 1</h5>
+                <p>R$26,49</p>
+                <button class="btnComprarCard"><a href="#" class="classComprarCard">Comprar <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a></button>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCategorias2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCategorias2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

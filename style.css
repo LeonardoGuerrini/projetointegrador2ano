@@ -67,10 +67,10 @@
         border-radius: 10px;
     }
 
-    #bannerMensagem{
+    .bannerMensagem{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: baseline;
         border: 1px solid gray;
         margin: 10px;
         color: #004b88;
@@ -79,13 +79,23 @@
 
     #bannerMensagemTexto{
         display: flex;
-        flex-direction: column;
         text-align: center;
-        align-content: flex-end;
+    }   
+
+    #textoBanner01{
+        font-weight: bold;
     }
 
     .americaSul{
         font-size: 30px;
+    }
+
+    .vertudo{
+        display: flex;
+        justify-content: center;
+        font-size: 17px;
+        color: rgb(98, 98, 98);
+        text-decoration: underline;
     }
 }
 

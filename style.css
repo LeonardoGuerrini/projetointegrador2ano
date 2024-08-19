@@ -5,7 +5,12 @@
     }
 
     .navbar-brand{
-        font-size: 36px;
+        font-size: 36px; 
+    }
+
+    .carrinho{
+        color: rgb(98, 98, 98);
+        font-size: 30px;
     }
 
     .divPrincipal{
@@ -141,6 +146,46 @@
         font-size: 14px;
         margin-top: 10px;
     }
+
+    .login{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #cccccc;
+        box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
+        border-radius: 14px;
+        padding: 20px;
+        margin: 100px 20px 100px 20px;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .login label{
+        display: flex;
+        justify-content: start;
+        margin-top: 20px;
+    }
+
+    .login input{
+        width: 100%;
+        padding: 5px 0;
+        border-radius: 6px;
+        border: 1px solid #cccccc;
+    }
+
+    .btnsLogin{
+        display: flex;
+        gap: 20px;
+    }
+
+    .btnsLogin input{
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        background-color: white;
+        color: #585858;
+        padding: 10px 0;
+        font-weight: 600;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -155,11 +200,27 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}
 
+
+
 @font-face {
     font-family: Tan-Pearl;
     src: url(Fontes/tan-pearl.otf);
 }
-    
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+}
+
 .navbar{
     background-color: rgb(17, 17, 17) !important;
 }

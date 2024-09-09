@@ -1,0 +1,151 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* navbar */
+
+    .navbar-nav{
+        font-size: 18px;
+    }
+
+    .navbar-brand{
+        font-size: 36px; 
+    }
+
+    .carrinho{
+        color: rgb(98, 98, 98);
+        font-size: 30px;
+    }
+
+    .divPrincipal{
+        margin-top: 10%;
+        background-color: white;
+        color: rgb(0, 0, 0);
+        border: 1px #000000 solid;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    /* fim navbar */
+
+    /* Footer */
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #1A1A1A;
+        margin-top: 50px;
+    }
+
+    .footer-titulo{
+        font-family: Tan-Pearl;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .footer-item{
+        color: #9B9B9B;
+        text-decoration: underline;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .footer-p{
+        color: #9B9B9B;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Fim Página Footer */
+
+    /* conteudo principal */
+
+    li{
+        list-style: none;
+    }
+
+    .caminhoul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .principal{
+
+    }
+
+    .principal h2{
+        text-align: center;
+    }
+
+    /* fim conteudo principal */
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {...}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
+
+
+
+@font-face {
+    font-family: Tan-Pearl;
+    src: url(Fontes/tan-pearl.otf);
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+}
+
+.navbar{
+    background-color: rgb(17, 17, 17) !important;
+}
+
+.navbar-brand{
+    font-family: Tan-Pearl;
+    letter-spacing: 1px;
+}
+
+.btn-outline-success{
+    color: white;
+    border-color: white;
+    --bs-btn-active-bg: white;
+    --bs-btn-color: white;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-active-border-color: black;
+    --bs-btn-active-color: black;
+
+}
+
+.btn-outline-success:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.btn-outline-success:active{
+    background-color: black;
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}

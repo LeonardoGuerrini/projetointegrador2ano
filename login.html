@@ -27,13 +27,13 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="#">Meu Carrinho</a>
+                <a class="nav-link" href="carrinho.html">Meu Carrinho</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html">Minha Conta</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Autoajuda</a>
+                <a class="nav-link" href="autoajuda.html">Autoajuda</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Negócios</a>
@@ -63,13 +63,18 @@
         </div>
       </nav>
 
+      <div class="titulologin">
+        <h1>Entrar</h1>
+      </div>
+
       <section class="login content">
         <form action="login.php" method="post">
           <label for="usuario">Usuário</label>
           <input type="text" name="usuario" id="usuario" required>
           <label for="senha">Senha</label>
           <input type="password" name="senha" id="senha" required>
-          <br><br>
+          <a href="" id="esqueciasenha">Esqueceu a senha?</a>
+          <br>
           <div class="btnsLogin">
             <input type="button" value="Cadastre-se" onclick="window.open('cadastro.html', '_self')">
             <input type="submit" value="Entrar">

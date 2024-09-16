@@ -774,6 +774,9 @@
             font-size: 34px; 
         }
 
+        .nav-item-financa{
+            display: none;
+        }
     
         /* fim navbar */
     
@@ -1017,7 +1020,258 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+@media only screen and (min-width: 1200px) {
+            /* navbar */
+
+            .navbar-nav{
+                font-size: 18px;
+            }
+        
+            .navbar-brand{
+                font-size: 34px; 
+            }
+        
+            /* fim navbar */
+        
+            /* conteudo principal */
+
+
+            .divPrincipal{
+                margin-top: 10%;
+                background-color: white;
+                color: rgb(0, 0, 0);
+                border: 1px #000000 solid;
+                border-radius: 10px;
+                width: 60%;
+                margin: auto;
+            }
+
+            .divPrincipal img{
+                margin-top: 5%;
+            }
+        
+            .carousel-item img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 20%;
+                margin-bottom: 30%;
+                border: 2px solid black;
+            }
+        
+            .carousel-dark .carousel-caption{
+                color: rgb(0, 0, 0);
+            }
+        
+            .carousel-caption h5{
+                font-size: 1.1rem;
+            }
+        
+            .h2Cards{
+                text-align: center;
+                margin-top: 20px;
+            }
+        
+            .shopping_cart{
+                display: inline-flex;
+                justify-content: center;
+                align-content: center;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+        
+            .btnComprarCard{
+                margin-bottom: 14px;
+                padding: 7px 15px 7px 15px;
+            }
+        
+            .categorias{
+                margin-top: 10%;
+            }
+        
+            .divCategorias{
+                margin-top: 10%;
+                background-color: white;
+                color: rgb(0, 0, 0);
+                border: 1px #000000 solid;
+                border-radius: 10px;
+                width: 60%;
+                margin: auto;
+            }
+        
+            .categorias img{
+                margin-top: 20px;
+            }
+        
+            .bannerMensagem{
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                border: 1px solid gray;
+                color: #004b88;
+                width: 60%;
+                margin: 10% auto auto auto;
+            }
+        
+            #bannerMensagemTexto{
+                display: flex;
+                text-align: center;
+            }   
+        
+            #textoBanner01{
+                font-weight: bold;
+            }
+        
+            .americaSul{
+                font-size: 30px;
+            }
+        
+            .vertudo{
+                display: flex;
+                justify-content: center;
+                font-size: 17px;
+                color: rgb(98, 98, 98);
+                text-decoration: underline;
+            }
+        
+            .social{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                margin-top: 10%;
+            }
+        
+            .social img{
+                width: 4.5%;
+            }
+        
+            /* fim conteudo principal */
+        
+            footer{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                background-color: #1A1A1A;
+                margin-top: 50px;
+            }
+        
+            .footer-titulo{
+                font-family: Tan-Pearl;
+                color: white;
+                margin-top: 20px;
+            }
+        
+            .footer-item{
+                color: #9B9B9B;
+                text-decoration: underline;
+                font-size: 14px;
+                margin-right: 5px;
+            }
+        
+            .footer-p{
+                color: #9B9B9B;
+                font-size: 14px;
+                margin-top: 10px;
+            }
+        
+            /* Página Login */
+        
+            .login{
+                display: flex;
+                flex-direction: column;
+                border: 1px solid #cccccc;
+                box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
+                border-radius: 14px;
+                padding: 20px;
+                margin: 40px 20px 100px 20px;
+                text-align: center;
+                justify-content: center;
+                
+            }
+        
+            .login label{
+                display: flex;
+                justify-content: start;
+                margin-top: 20px;
+            }
+        
+            .login input{
+                width: 100%;
+                padding: 5px 0;
+                border-radius: 6px;
+                border: 1px solid #cccccc;
+            }
+        
+            .btnsLogin{
+                display: flex;
+                gap: 20px;
+            }
+        
+            .titulocadastro, .titulologin{
+                margin-top: 50px;
+                text-align: center;
+            }
+        
+            #esqueciasenha{
+                display: flex;
+                margin-top: 5px;
+            }
+        
+            .btnsLogin input{
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                background-color: white;
+                color: #585858;
+                padding: 10px 0;
+                font-weight: 600;
+            }
+        
+            /* Fim Página Login */
+        
+            .livros{
+                border: 1px solid #cccccc;
+                box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
+                border-radius: 14px;
+                padding: 20px;
+                text-align: center;
+                display:flex;
+                justify-content:space-around;
+                float: left;
+                margin: auto;
+            }
+            .mangas{
+               width: 120px ;
+               margin: auto;
+               color: #000000;
+               text-justify: auto;
+        
+        
+            }
+            .livros a{
+                color: #000000;
+            }
+        
+            .livros a:hover {
+                color: #004b88;
+            }
+            
+            .dmslayer{
+                background-color: #1A1A1A;
+                display: flex;
+            }
+            .comprar{
+                width: 150px;
+                display: flex;
+                margin-left: 7px;
+                margin-top: 10px;
+            }
+            .produto{
+                font-size: 20px;
+                color: white;
+                margin-top: 30px;
+                margin-left: 30px;
+            }
+}
 
 
 

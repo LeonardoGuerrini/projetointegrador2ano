@@ -72,6 +72,8 @@
         margin: 10px;
         color: #004b88;
         margin-top: 10%;
+        gap: 10px;
+        text-align: center;
     }
 
     #bannerMensagemTexto{
@@ -232,6 +234,8 @@
         color: #004b88;
         width: 50%;
         margin: 10% auto auto auto;
+        gap: 10px;
+        text-align: center;
     }
 
     #bannerMensagemTexto{
@@ -396,6 +400,8 @@
             color: #004b88;
             width: 50%;
             margin: 10% auto auto auto;
+            gap: 10px;
+            text-align: center;
         }
     
         #bannerMensagemTexto{
@@ -563,6 +569,8 @@
             color: #004b88;
             width: 60%;
             margin: 10% auto auto auto;
+            gap: 10px;
+            text-align: center;
         }
     
         #bannerMensagemTexto{
@@ -736,17 +744,15 @@
             .bannerMensagem{
                 display: flex;
                 justify-content: center;
-                align-items: baseline;
+                align-items: center;
                 border: 1px solid gray;
                 color: #004b88;
                 width: 35%;
                 margin: 5% auto auto auto;
-            }
-        
-            #bannerMensagemTexto{
-                display: flex;
+                gap: 10px;
                 text-align: center;
-            }   
+            }
+
         
             #textoBanner01{
                 font-weight: bold;

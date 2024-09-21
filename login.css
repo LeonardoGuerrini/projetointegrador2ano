@@ -283,9 +283,6 @@
 }
 
 
-
-
-
 @font-face {
     font-family: Tan-Pearl;
     src: url(Fontes/tan-pearl.otf);
@@ -338,18 +335,11 @@ body{
     color: black;
 }
 
-.btnComprarCard{
-    border: none;
-    color: white !important;
-    background-color: #28a745;
-    border-radius: 5px;
-    /* padding: 5px 10px 5px 10px; */
-}
-
-.classComprarCard{
-    color: white !important;
-}
-
 a{
     text-decoration: none;
+}
+
+#btnEntrar{
+    background-color: #008211;
+    color: white;
 }

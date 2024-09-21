@@ -18,7 +18,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 25%;
-        margin-bottom: 45%;
+        margin-bottom: 47%;
         border: 2px solid black;
     }
 
@@ -64,6 +64,10 @@
         margin-top: 25px;
     }
 
+    .fixtext img{
+        margin-bottom: 190px;
+    }
+
     .bannerMensagem{
         display: flex;
         justify-content: center;
@@ -72,13 +76,14 @@
         margin: 10px;
         color: #004b88;
         margin-top: 10%;
-        gap: 10px;
         text-align: center;
     }
 
     #bannerMensagemTexto{
         display: flex;
         text-align: center;
+        gap: 10px;
+        margin-top: 10px;
     }   
 
     #textoBanner01{
@@ -87,6 +92,7 @@
 
     .americaSul{
         font-size: 30px;
+        margin-top: 5px;
     }
 
     .vertudo{
@@ -232,15 +238,16 @@
         align-items: baseline;
         border: 1px solid gray;
         color: #004b88;
-        width: 50%;
+        width: 70%;
         margin: 10% auto auto auto;
-        gap: 10px;
         text-align: center;
     }
 
     #bannerMensagemTexto{
         display: flex;
         text-align: center;
+        gap: 10px;
+        margin-top: 10px;
     }   
 
     #textoBanner01{
@@ -249,6 +256,7 @@
 
     .americaSul{
         font-size: 30px;
+        margin-top: 5px;
     }
 
     .vertudo{
@@ -398,15 +406,16 @@
             align-items: baseline;
             border: 1px solid gray;
             color: #004b88;
-            width: 50%;
+            width: 70%;
             margin: 10% auto auto auto;
-            gap: 10px;
             text-align: center;
         }
     
         #bannerMensagemTexto{
             display: flex;
             text-align: center;
+            gap: 10px;
+            margin-top: 10px;
         }   
     
         #textoBanner01{
@@ -415,6 +424,7 @@
     
         .americaSul{
             font-size: 30px;
+            margin-top: 5px;
         }
     
         .vertudo{
@@ -569,13 +579,14 @@
             color: #004b88;
             width: 60%;
             margin: 10% auto auto auto;
-            gap: 10px;
             text-align: center;
         }
     
         #bannerMensagemTexto{
             display: flex;
             text-align: center;
+            gap: 10px;
+            margin-top: 10px;
         }   
     
         #textoBanner01{
@@ -584,6 +595,7 @@
     
         .americaSul{
             font-size: 30px;
+            margin-top: 5px;
         }
     
         .vertudo{
@@ -657,7 +669,7 @@
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {        
+@media only screen and (min-width: 1200px) {
             /* conteudo principal */
         
             .divBannerDesconto{
@@ -749,17 +761,23 @@
                 color: #004b88;
                 width: 35%;
                 margin: 5% auto auto auto;
-                gap: 10px;
                 text-align: center;
             }
 
-        
+            #bannerMensagemTexto{
+                display: flex;
+                text-align: center;
+                gap: 10px;
+                margin-top: 10px;
+            }   
+
             #textoBanner01{
                 font-weight: bold;
             }
         
             .americaSul{
                 font-size: 30px;
+                margin-top: 5px;
             }
         
             .vertudo{

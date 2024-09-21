@@ -1,18 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .navbar-nav{
-        font-size: 18px;
-    }
-
-    .navbar-brand{
-        font-size: 36px; 
-    }
-
-    .carrinho{
-        color: rgb(98, 98, 98);
-        font-size: 30px;
-    }
-
     .divPrincipal{
         margin-top: 10%;
         background-color: white;
@@ -31,7 +18,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 25%;
-        margin-bottom: 45%;
+        margin-bottom: 47%;
         border: 2px solid black;
     }
 
@@ -66,7 +53,6 @@
     }
 
     .divCategorias{
-        margin-top: 10%;
         background-color: white;
         color: rgb(0, 0, 0);
         border: 1px #000000 solid;
@@ -75,7 +61,11 @@
     }
 
     .categorias img{
-        margin-top: 20px;
+        margin-top: 25px;
+    }
+
+    .fixtext img{
+        margin-bottom: 190px;
     }
 
     .bannerMensagem{
@@ -86,11 +76,14 @@
         margin: 10px;
         color: #004b88;
         margin-top: 10%;
+        text-align: center;
     }
 
     #bannerMensagemTexto{
         display: flex;
         text-align: center;
+        gap: 10px;
+        margin-top: 10px;
     }   
 
     #textoBanner01{
@@ -99,6 +92,7 @@
 
     .americaSul{
         font-size: 30px;
+        margin-top: 5px;
     }
 
     .vertudo{
@@ -120,86 +114,7 @@
         width: 11%;
     }
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #1A1A1A;
-        margin-top: 50px;
-    }
 
-    .footer-titulo{
-        font-family: Tan-Pearl;
-        color: white;
-        margin-top: 20px;
-    }
-
-    .footer-item{
-        color: #9B9B9B;
-        text-decoration: underline;
-        font-size: 14px;
-        margin-right: 5px;
-    }
-
-    .footer-p{
-        color: #9B9B9B;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    /* Página Login */
-
-    .login{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #cccccc;
-        box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
-        border-radius: 14px;
-        padding: 20px;
-        margin: 40px 20px 100px 20px;
-        text-align: center;
-        justify-content: center;
-        
-    }
-
-    .login label{
-        display: flex;
-        justify-content: start;
-        margin-top: 20px;
-    }
-
-    .login input{
-        width: 100%;
-        padding: 5px 0;
-        border-radius: 6px;
-        border: 1px solid #cccccc;
-    }
-
-    .btnsLogin{
-        display: flex;
-        gap: 20px;
-    }
-
-    .titulocadastro, .titulologin{
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    #esqueciasenha{
-        display: flex;
-        margin-top: 5px;
-    }
-
-    .btnsLogin input{
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-        background-color: white;
-        color: #585858;
-        padding: 10px 0;
-        font-weight: 600;
-    }
-
-    /* Fim Página Login */
 
     .livros{
         border: 1px solid #cccccc;
@@ -248,23 +163,6 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
-    /* navbar */
-
-    .navbar-nav{
-        font-size: 18px;
-    }
-
-    .navbar-brand{
-        font-size: 36px; 
-    }
-
-    .carrinho{
-        color: rgb(98, 98, 98);
-        font-size: 30px;
-    }
-
-    /* fim navbar */
-
     /* conteudo principal */
 
     .divPrincipal{
@@ -340,13 +238,16 @@
         align-items: baseline;
         border: 1px solid gray;
         color: #004b88;
-        width: 50%;
+        width: 70%;
         margin: 10% auto auto auto;
+        text-align: center;
     }
 
     #bannerMensagemTexto{
         display: flex;
         text-align: center;
+        gap: 10px;
+        margin-top: 10px;
     }   
 
     #textoBanner01{
@@ -355,6 +256,7 @@
 
     .americaSul{
         font-size: 30px;
+        margin-top: 5px;
     }
 
     .vertudo{
@@ -378,86 +280,9 @@
 
     /* fim conteudo principal */
 
-    footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #1A1A1A;
-        margin-top: 50px;
-    }
+    
 
-    .footer-titulo{
-        font-family: Tan-Pearl;
-        color: white;
-        margin-top: 20px;
-    }
-
-    .footer-item{
-        color: #9B9B9B;
-        text-decoration: underline;
-        font-size: 14px;
-        margin-right: 5px;
-    }
-
-    .footer-p{
-        color: #9B9B9B;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    /* Página Login */
-
-    .login{
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #cccccc;
-        box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
-        border-radius: 14px;
-        padding: 20px;
-        margin: 40px 20px 100px 20px;
-        text-align: center;
-        justify-content: center;
-        
-    }
-
-    .login label{
-        display: flex;
-        justify-content: start;
-        margin-top: 20px;
-    }
-
-    .login input{
-        width: 100%;
-        padding: 5px 0;
-        border-radius: 6px;
-        border: 1px solid #cccccc;
-    }
-
-    .btnsLogin{
-        display: flex;
-        gap: 20px;
-    }
-
-    .titulocadastro, .titulologin{
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    #esqueciasenha{
-        display: flex;
-        margin-top: 5px;
-    }
-
-    .btnsLogin input{
-        border: 1px solid #cccccc;
-        border-radius: 4px;
-        background-color: white;
-        color: #585858;
-        padding: 10px 0;
-        font-weight: 600;
-    }
-
-    /* Fim Página Login */
+    
 
     .livros{
         border: 1px solid #cccccc;
@@ -506,33 +331,16 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-        /* navbar */
-
-        .navbar-nav{
-            font-size: 18px;
-        }
-    
-        .navbar-brand{
-            font-size: 36px; 
-        }
-    
-        .carrinho{
-            color: rgb(98, 98, 98);
-            font-size: 30px;
-        }
-    
-        /* fim navbar */
     
         /* conteudo principal */
     
         .divPrincipal{
-            margin-top: 10%;
             background-color: white;
             color: rgb(0, 0, 0);
             border: 1px #000000 solid;
             border-radius: 10px;
             width: 70%;
-            margin: auto;
+            margin: 3% auto auto auto;
         }
     
         .divPrincipal img{
@@ -598,13 +406,16 @@
             align-items: baseline;
             border: 1px solid gray;
             color: #004b88;
-            width: 50%;
+            width: 70%;
             margin: 10% auto auto auto;
+            text-align: center;
         }
     
         #bannerMensagemTexto{
             display: flex;
             text-align: center;
+            gap: 10px;
+            margin-top: 10px;
         }   
     
         #textoBanner01{
@@ -613,6 +424,7 @@
     
         .americaSul{
             font-size: 30px;
+            margin-top: 5px;
         }
     
         .vertudo{
@@ -636,86 +448,9 @@
     
         /* fim conteudo principal */
     
-        footer{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            background-color: #1A1A1A;
-            margin-top: 50px;
-        }
+        
     
-        .footer-titulo{
-            font-family: Tan-Pearl;
-            color: white;
-            margin-top: 20px;
-        }
-    
-        .footer-item{
-            color: #9B9B9B;
-            text-decoration: underline;
-            font-size: 14px;
-            margin-right: 5px;
-        }
-    
-        .footer-p{
-            color: #9B9B9B;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-    
-        /* Página Login */
-    
-        .login{
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #cccccc;
-            box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
-            border-radius: 14px;
-            padding: 20px;
-            margin: 40px 20px 100px 20px;
-            text-align: center;
-            justify-content: center;
-            
-        }
-    
-        .login label{
-            display: flex;
-            justify-content: start;
-            margin-top: 20px;
-        }
-    
-        .login input{
-            width: 100%;
-            padding: 5px 0;
-            border-radius: 6px;
-            border: 1px solid #cccccc;
-        }
-    
-        .btnsLogin{
-            display: flex;
-            gap: 20px;
-        }
-    
-        .titulocadastro, .titulologin{
-            margin-top: 50px;
-            text-align: center;
-        }
-    
-        #esqueciasenha{
-            display: flex;
-            margin-top: 5px;
-        }
-    
-        .btnsLogin input{
-            border: 1px solid #cccccc;
-            border-radius: 4px;
-            background-color: white;
-            color: #585858;
-            padding: 10px 0;
-            font-weight: 600;
-        }
-    
-        /* Fim Página Login */
+        
     
         .livros{
             border: 1px solid #cccccc;
@@ -764,32 +499,19 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-        /* navbar */
 
-        .navbar-nav{
-            font-size: 16px;
-        }
-    
-        .navbar-brand{
-            font-size: 34px; 
-        }
-
-        .nav-item-financa{
-            display: none;
-        }
-    
-        /* fim navbar */
     
         /* conteudo principal */
+
+        
     
         .divPrincipal{
-            margin-top: 10%;
             background-color: white;
             color: rgb(0, 0, 0);
             border: 1px #000000 solid;
             border-radius: 10px;
             width: 60%;
-            margin: auto;
+            margin: 3% auto auto auto;
         }
     
         .divPrincipal img{
@@ -857,11 +579,14 @@
             color: #004b88;
             width: 60%;
             margin: 10% auto auto auto;
+            text-align: center;
         }
     
         #bannerMensagemTexto{
             display: flex;
             text-align: center;
+            gap: 10px;
+            margin-top: 10px;
         }   
     
         #textoBanner01{
@@ -870,6 +595,7 @@
     
         .americaSul{
             font-size: 30px;
+            margin-top: 5px;
         }
     
         .vertudo{
@@ -893,86 +619,9 @@
     
         /* fim conteudo principal */
     
-        footer{
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            background-color: #1A1A1A;
-            margin-top: 50px;
-        }
+        
     
-        .footer-titulo{
-            font-family: Tan-Pearl;
-            color: white;
-            margin-top: 20px;
-        }
-    
-        .footer-item{
-            color: #9B9B9B;
-            text-decoration: underline;
-            font-size: 14px;
-            margin-right: 5px;
-        }
-    
-        .footer-p{
-            color: #9B9B9B;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-    
-        /* Página Login */
-    
-        .login{
-            display: flex;
-            flex-direction: column;
-            border: 1px solid #cccccc;
-            box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
-            border-radius: 14px;
-            padding: 20px;
-            margin: 40px 20px 100px 20px;
-            text-align: center;
-            justify-content: center;
-            
-        }
-    
-        .login label{
-            display: flex;
-            justify-content: start;
-            margin-top: 20px;
-        }
-    
-        .login input{
-            width: 100%;
-            padding: 5px 0;
-            border-radius: 6px;
-            border: 1px solid #cccccc;
-        }
-    
-        .btnsLogin{
-            display: flex;
-            gap: 20px;
-        }
-    
-        .titulocadastro, .titulologin{
-            margin-top: 50px;
-            text-align: center;
-        }
-    
-        #esqueciasenha{
-            display: flex;
-            margin-top: 5px;
-        }
-    
-        .btnsLogin input{
-            border: 1px solid #cccccc;
-            border-radius: 4px;
-            background-color: white;
-            color: #585858;
-            padding: 10px 0;
-            font-weight: 600;
-        }
-    
-        /* Fim Página Login */
+        
     
         .livros{
             border: 1px solid #cccccc;
@@ -1021,33 +670,31 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-            /* navbar */
-
-            .navbar-nav{
-                font-size: 18px;
-            }
-        
-            .navbar-brand{
-                font-size: 34px; 
-            }
-        
-            /* fim navbar */
-        
             /* conteudo principal */
+        
+            .divBannerDesconto{
+                overflow: hidden;
+            }
 
+            #bannerdesconto{
+                display: none;
+            }
+
+            #bannerdesconto02{
+                display: block !important;
+            }
 
             .divPrincipal{
-                margin-top: 10%;
                 background-color: white;
                 color: rgb(0, 0, 0);
                 border: 1px #000000 solid;
                 border-radius: 10px;
-                width: 60%;
-                margin: auto;
+                width: 35%;
+                margin: 3% auto auto auto;
             }
 
             .divPrincipal img{
-                margin-top: 5%;
+                margin-top: 20px;
             }
         
             .carousel-item img{
@@ -1055,7 +702,7 @@
                 margin-left: auto;
                 margin-right: auto;
                 width: 20%;
-                margin-bottom: 30%;
+                margin-bottom: 25%;
                 border: 2px solid black;
             }
         
@@ -1086,16 +733,19 @@
             }
         
             .categorias{
-                margin-top: 10%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-top: 5%;
+                gap: 100px;
             }
         
             .divCategorias{
-                margin-top: 10%;
                 background-color: white;
                 color: rgb(0, 0, 0);
                 border: 1px #000000 solid;
                 border-radius: 10px;
-                width: 60%;
+                width: 35%;
                 margin: auto;
             }
         
@@ -1106,24 +756,28 @@
             .bannerMensagem{
                 display: flex;
                 justify-content: center;
-                align-items: baseline;
+                align-items: center;
                 border: 1px solid gray;
                 color: #004b88;
-                width: 60%;
-                margin: 10% auto auto auto;
+                width: 35%;
+                margin: 5% auto auto auto;
+                text-align: center;
             }
-        
+
             #bannerMensagemTexto{
                 display: flex;
                 text-align: center;
+                gap: 10px;
+                margin-top: 10px;
             }   
-        
+
             #textoBanner01{
                 font-weight: bold;
             }
         
             .americaSul{
                 font-size: 30px;
+                margin-top: 5px;
             }
         
             .vertudo{
@@ -1138,95 +792,14 @@
                 display: flex;
                 flex-direction: row;
                 text-align: center;
-                margin-top: 10%;
+                margin: 5% auto auto auto;
             }
         
             .social img{
-                width: 4.5%;
+                width: 3%;
             }
         
-            /* fim conteudo principal */
-        
-            footer{
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                background-color: #1A1A1A;
-                margin-top: 50px;
-            }
-        
-            .footer-titulo{
-                font-family: Tan-Pearl;
-                color: white;
-                margin-top: 20px;
-            }
-        
-            .footer-item{
-                color: #9B9B9B;
-                text-decoration: underline;
-                font-size: 14px;
-                margin-right: 5px;
-            }
-        
-            .footer-p{
-                color: #9B9B9B;
-                font-size: 14px;
-                margin-top: 10px;
-            }
-        
-            /* Página Login */
-        
-            .login{
-                display: flex;
-                flex-direction: column;
-                border: 1px solid #cccccc;
-                box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
-                border-radius: 14px;
-                padding: 20px;
-                margin: 40px 20px 100px 20px;
-                text-align: center;
-                justify-content: center;
-                
-            }
-        
-            .login label{
-                display: flex;
-                justify-content: start;
-                margin-top: 20px;
-            }
-        
-            .login input{
-                width: 100%;
-                padding: 5px 0;
-                border-radius: 6px;
-                border: 1px solid #cccccc;
-            }
-        
-            .btnsLogin{
-                display: flex;
-                gap: 20px;
-            }
-        
-            .titulocadastro, .titulologin{
-                margin-top: 50px;
-                text-align: center;
-            }
-        
-            #esqueciasenha{
-                display: flex;
-                margin-top: 5px;
-            }
-        
-            .btnsLogin input{
-                border: 1px solid #cccccc;
-                border-radius: 4px;
-                background-color: white;
-                color: #585858;
-                padding: 10px 0;
-                font-weight: 600;
-            }
-        
-            /* Fim Página Login */
+            /* fim conteudo principal */ 
         
             .livros{
                 border: 1px solid #cccccc;
@@ -1341,4 +914,12 @@ body{
 
 a{
     text-decoration: none;
+}
+
+#bannerdesconto02{
+    display: none;
+}
+
+.divCategorias{
+    margin-top: 20px;
 }

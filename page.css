@@ -1,62 +1,5 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    /* navbar */
-
-    .navbar-nav{
-        font-size: 18px;
-    }
-
-    .navbar-brand{
-        font-size: 36px; 
-    }
-
-    .carrinho{
-        color: rgb(98, 98, 98);
-        font-size: 30px;
-    }
-
-    .divPrincipal{
-        margin-top: 10%;
-        background-color: white;
-        color: rgb(0, 0, 0);
-        border: 1px #000000 solid;
-        margin: 10px;
-        border-radius: 10px;
-    }
-
-    /* fim navbar */
-
-    /* Footer */
-
-    footer{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        background-color: #1A1A1A;
-        margin-top: 50px;
-    }
-
-    .footer-titulo{
-        font-family: Tan-Pearl;
-        color: white;
-        margin-top: 20px;
-    }
-
-    .footer-item{
-        color: #9B9B9B;
-        text-decoration: underline;
-        font-size: 14px;
-        margin-right: 5px;
-    }
-
-    .footer-p{
-        color: #9B9B9B;
-        font-size: 14px;
-        margin-top: 10px;
-    }
-
-    /* Fim Página Footer */
-
     /* conteudo principal */
 
     li{
@@ -66,7 +9,15 @@
     .caminhoul{
         display: flex;
         flex-direction: row;
+        justify-content: center;
         gap: 10px;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    .caminhoul li a{
+        color: rgb(63, 63, 63);
+        text-decoration: none;
     }
 
     .principal{

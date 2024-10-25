@@ -54,13 +54,157 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
+@media only screen and (min-width: 600px) {
+    li{
+        list-style: none;
+    }
+
+    .caminhoul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    .caminhoul li a{
+        color: rgb(63, 63, 63);
+        text-decoration: none;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal-div{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .div-cards{
+        width: 30%;
+        margin: 10px auto;
+        border: 1px solid black;
+        align-self: center;
+
+    }
+
+    .div-cards img{
+        width: 50%;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+    
+    .card-texto{
+        margin-top: 5px;
+    }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+    li{
+        list-style: none;
+    }
+
+    .caminhoul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    .caminhoul li a{
+        color: rgb(63, 63, 63);
+        text-decoration: none;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal-div{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .div-cards{
+        width: 30%;
+        margin: 10px auto;
+        border: 1px solid black;
+        align-self: center;
+
+    }
+
+    .div-cards img{
+        width: 50%;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+    
+    .card-texto{
+        margin-top: 5px;
+    }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+@media only screen and (min-width: 992px) {
+    li{
+        list-style: none;
+    }
+
+    .caminhoul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        font-weight: 600;
+        padding: 1rem;
+    }
+
+    .caminhoul li a{
+        color: rgb(63, 63, 63);
+        text-decoration: none;
+    }
+
+    .principal{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .principal-div{
+        display: flex;
+        margin-top: 20px;
+        flex-wrap: wrap;
+    }
+
+    .div-cards{
+        width: 20%;
+        margin: 10px auto;
+        border: 1px solid black;
+        align-self: center;
+
+    }
+
+    .div-cards img{
+        width: 50%;
+        border: 2px solid black;
+        margin-top: 10px;
+    }
+    
+    .card-texto{
+        margin-top: 5px;
+    }
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {...}

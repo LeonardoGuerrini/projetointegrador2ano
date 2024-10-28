@@ -102,6 +102,31 @@
     .card-texto{
         margin-top: 5px;
     }
+    footer{
+        display: end;
+        flex-direction: end;
+        text-align: center;
+        background-color: #1A1A1A;
+        margin-top: auto;
+    }
+
+    .footer-titulo{
+        font-family: Tan-Pearl;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .footer-item{
+        color: #9B9B9B;
+        text-decoration: underline;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .footer-p{
+        color: #9B9B9B;
+        font-size: 14px;
+        margin-top: 10px;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -153,6 +178,31 @@
     .card-texto{
         margin-top: 5px;
     }
+    footer{
+        display: end;
+        flex-direction: end;
+        text-align: center;
+        background-color: #1A1A1A;
+        margin-top: auto;
+    }
+
+    .footer-titulo{
+        font-family: Tan-Pearl;
+        color: white;
+        margin-top: 20px;
+    }
+
+    .footer-item{
+        color: #9B9B9B;
+        text-decoration: underline;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .footer-p{
+        color: #9B9B9B;
+        font-size: 14px;
+        margin-top: 10px;
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -287,3 +337,28 @@ a{
 .classComprarCard{
     color: white !important;
 }
+footer{
+    display: end;
+    flex-direction: end;
+    text-align: center;
+    background-color: #1A1A1A;
+    margin-top: auto;
+}
+
+.footer-titulo{
+    font-family: Tan-Pearl;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer-item{
+    color: #9B9B9B;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.footer-p{
+    color: #9B9B9B;
+    font-size: 14px;
+    margin-top: 10px;

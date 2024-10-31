@@ -37,7 +37,7 @@
         margin: 10px auto;
         border: 1px solid black;
         align-self: center;
-
+        
     }
 
     .div-cards img{
@@ -127,6 +127,7 @@
         color: #9B9B9B;
         font-size: 14px;
         margin-top: 10px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -203,6 +204,7 @@
         color: #9B9B9B;
         font-size: 14px;
         margin-top: 10px;
+    }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -362,3 +364,4 @@ footer{
     color: #9B9B9B;
     font-size: 14px;
     margin-top: 10px;
+}

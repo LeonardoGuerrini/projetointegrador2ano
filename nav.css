@@ -1,5 +1,9 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px){
+    .dropdown{
+        margin-bottom: 10px;
+    }
+
     .navbar-nav{
         font-size: 18px;
     }
@@ -11,6 +15,10 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px){
+    .dropdown{
+        margin-bottom: 10px;
+    }
+
         .navbar-nav{
             font-size: 18px;
         }
@@ -22,6 +30,9 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    .dropdown{
+        margin-bottom: 10px;
+    }
             .navbar-nav{
                 font-size: 18px;
             }
@@ -55,4 +66,17 @@
                 .navbar-brand{
                     font-size: 34px; 
                 }
+}
+
+.dropdown{
+    margin-right: 10px;
+}
+
+.dropdown button{
+    background-color: rgb(17, 17, 17);
+    color: #cccccc  ;
+}
+
+.btn-secondary, .dropdown-menu{
+    background-color: rgb(17, 17, 17) !important;
 }

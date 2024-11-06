@@ -1,33 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wissen Livraria - Início</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wissen Livraria - Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="pag.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Wissen</a>
       <button
@@ -89,35 +74,46 @@
     </div>
   </nav>
 
-    <section class="principal">
-        <div>
-            <div>
-                <img src="Img/" alt="">
-                <p>Nome e sobrenome</p>
-                <p>Email</p>
-                <p>Telefone</p>
-                <p>Endereço</p>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-      <h1 class="footer-titulo">Wissen</h1>
-      <div class="footer-links">
-        <a href="#" class="footer-item">Condições de Uso</a>
-        <a href="#" class="footer-item">Notificação de Privacidade</a>
-        <a href="#" class="footer-item">Cookies</a>
-        <a href="#" class="footer-item">Anúncios Baseados e Interesses</a>
+  <section>
+    <img src="Img/Pai Rico, Pai Pobre.svg" alt="" class="comprar">
+    <div class="text-desc">
+      <p class="produto">
+        Pai Rico, Pai Pobre
+      </p>
+      <p class="desc" style="color: rgb(0, 0, 0);">
+        Pai Rico, Pai Pobre
+      </p>
+      <div class="btns">
+        <a href="#">
+          <button class="btn-compra" type="button">Comprar</button>
+        </a>
+        <a href="#">
+          <button class="btn-compra" type="button">Carrinho</button>
+        </a>
       </div>
-      <div class="footer-p">
-        <p>© 2020-2024 Wissen.com, Inc. ou suas afiliadas.</p>
-      </div>
-    </footer>
+    </div>
+  </section>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+
+
+  <footer>
+    <h1 class="footer-titulo">Wissen</h1>
+    <div class="footer-links">
+      <a href="#" class="footer-item">Condições de Uso</a>
+      <a href="#" class="footer-item">Notificação de Privacidade</a>
+      <a href="#" class="footer-item">Cookies</a>
+      <a href="#" class="footer-item">Anúncios Baseados e Interesses</a>
+    </div>
+    <div class="footer-p">
+      <p>© 2020-2024 Wissen.com, Inc. ou suas afiliadas.</p>
+    </div>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,3 +1,42 @@
+<?php
+include('conexao.php');
+session_start();
+
+if (isset($_POST['usuario']) || isset($_POST['senha'])){
+    if(strlen($_POST['usuario']) == 0){
+        echo "Preencha seu usuário";
+    } else if(strlen($_POST['senha']) == 0){
+        echo "Preencha sua senha";
+    } else {
+        $usuario = $mysqli->real_escape_string($_POST['usuario']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+
+        $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
+        $sql_query = $mysqli->query($sql) or die("Falha ao executar código sql: ". $mysqli->error);
+
+        $qtde = $sql_query->num_rows;
+        if($qtde == 1){
+            $usuario = $sql_query->fetch_assoc();
+
+            if(!isset($_SESSION)){
+                session_start();
+            }
+
+            $_SESSION['id'] = $usuario['id'];
+            $_SESSION['nome'] = $usuario['nome'];
+            $_SESSION['dtnascimento'] = $usuario['dtnascimento'];
+            $_SESSION['email'] = $usuario['email'];
+            $_SESSION['usuario'] = $usuario['usuario'];
+
+            header("Location: principal.php");
+            exit();
+        } else{
+            echo "<p class='text-lg text-center mt-4'>Falha! Usuário e/ou senha incorretos</p>";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -54,10 +93,8 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <li><a class="dropdown-item" href="login.php">Login</a></li>
+            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">

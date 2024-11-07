@@ -1,3 +1,34 @@
+<?php
+include('conexao.php');
+
+if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) && isset($_POST['cpf']) && isset($_POST['dataNs']) && isset($_POST['numeroTel']) && isset($_POST(['senha']))){
+    $nome = $mysqli->real_escape_string($_POST['nome']);
+    $email = $mysqli->real_escape_string($_POST['email']);
+    $usuario = $mysqli->real_escape_string($_POST['usuario']);
+    $cpf = $mysqli->real_escape_string($_POST['cpf']);
+    $dataNs = $mysqli->real_escape_string($_POST['dataNs']);
+    $numeroTel = $mysqli->real_escape_string($_POST['numeroTel']);
+    $senha = $mysqli->real_escape_string($_POST['senha']);
+
+    // Verificar se o usuário já existe
+    $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario'";
+    $sql_query = $mysqli->query($sql);
+
+    if($sql_query->num_rows > 0){
+        echo "<p class='text-center text-lg m-4 underline'>Usuário já cadastrado</p>";
+    } else{
+        $sql = "INSERT INTO cadastro(nome, email, usuario, cpf, dataNs, numeroTel, senha) VALUES ('$nome', '$email', '$usuario', '$cpf', '$dataNs', '$numeroTel', '$senha')";
+
+        if($mysqli->query($sql) === TRUE){
+            echo "<p class='text-center text-lg m-4 underline'>Cadastro realizado com sucesso!</p>";
+        } else{
+            echo "<p class='text-center text-lg m-4 underline'>Erro: </p>". $mysqli->error;
+        }
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,7 +44,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Wissen</a>
       <button
@@ -23,8 +54,7 @@
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -54,10 +84,8 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <li><a class="dropdown-item" href="login.php">Login</a></li>
+            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">
@@ -65,8 +93,7 @@
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>

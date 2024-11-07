@@ -102,7 +102,7 @@
         <div class="principal-div">
           
           <div class="div-cards">
-            <img src="Img/AsArmasDaPesuasao.jpg" alt="As Armas da Persuasão">
+            <img src="Img/A arte da persuasão.svg" alt="As Armas da Persuasão">
             <div class="card-texto">
               <h6 class="card-titulo">
                 As Armas da Persuasão
@@ -110,7 +110,7 @@
               </h6>
               <p class="card-valor">R$29,70</p>
               <button class="btnComprarCard">
-                <a href="asarmas.html" class="classComprarCard"
+                <a href="asarmas.php" class="classComprarCard"
                   >Comprar
                   <span class="material-symbols-outlined shopping_cart"
                     >add_shopping_cart</span
@@ -122,7 +122,7 @@
           </div>
   
           <div class="div-cards">
-            <img src="Img/NaRaça.jpg" alt="Berserk Volume 01">
+            <img src="Img/Na Raça.jpg" alt="Berserk Volume 01">
             <div class="card-texto">
               <h6 class="card-titulo" style="margin-top: 8px;">Na Raça.</h6>
               <p class="card-valor">R$29,99</p>
@@ -138,9 +138,9 @@
           </div>
   
           <div class="div-cards">
-            <img src="Img/demonslayervol1.svg" alt="Demon Slayer Volume 01">
+            <img src="Img/AsArmasDaPersuasao.jpg" alt="Demon Slayer Volume 01">
             <div class="card-texto">
-              <h6 class="card-titulo">Demon Slayer Vol. 01</h6>
+              <h6 class="card-titulo">As Armas Da Persuasão</h6>
               <p class="card-valor">R$26,49</p>
               <button class="btnComprarCard">
                 <a href="demon.html" class="classComprarCard"
@@ -154,9 +154,9 @@
           </div>
   
           <div class="div-cards">
-            <img src="Img/sakamotodays03.svg" alt="Sakamoto Days Volume 03">
+            <img src="Img/Deixedeserpobre.jpg" alt="Sakamoto Days Volume 03">
             <div class="card-texto">
-              <h6 class="card-titulo">Sakamoto Days Vol. 03</h6>
+              <h6 class="card-titulo">Deix de ser Pobre</h6>
               <p class="card-valor">R$21,89</p>
               <button class="btnComprarCard">
                 <a href="#" class="classComprarCard"
@@ -170,9 +170,9 @@
           </div>
   
           <div class="div-cards">
-            <img src="Img/demonslayervol02.svg" alt="Demon Slayer Volume 02">
+            <img src="Img/Apaixone-se Pelo Problema.jpg" alt="Demon Slayer Volume 02">
             <div class="card-texto">
-              <h6 class="card-titulo">Demon Slayer Vol. 02</h6>
+              <h6 class="card-titulo">Apaixone-se Pelo Problema, Não pela Solução</h6>
               <p class="card-valor">R$34,90</p>
               <button class="btnComprarCard">
                 <a href="#" class="classComprarCard"
@@ -186,9 +186,9 @@
           </div>
   
           <div class="div-cards">
-            <img src="Img/demonslayervol03.svg" alt="Demon Slayer Volume 03">
+            <img src="Img/AMarcadaVitoria.jpg" alt="Demon Slayer Volume 03">
             <div class="card-texto">
-              <h6 class="card-titulo">Demon Slayer Vol. 03</h6>
+              <h6 class="card-titulo">A Marca da Vitoria</h6>
               <p class="card-valor">R$34,90</p>
               <button class="btnComprarCard">
                 <a href="#" class="classComprarCard"

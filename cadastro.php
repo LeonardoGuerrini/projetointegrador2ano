@@ -32,7 +32,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -109,7 +109,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
   </div>
 
   <section class="login content">
-    <form action="login.php" method="post">
+    <form action="" method="post">
       <label for="nome">Nome</label>
       <input type="text" name="nome" id="nome" required>
 
@@ -139,8 +139,9 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
       <input type="password" name="senha" id="senha" required>
 
       <br><br>
+      
       <div class="btnsLogin">
-        <input type="button" value="Cadastre-se" onclick="window.open('cadastro.php', '_self')" style="background-color: #008211; color: white;">
+        <input type="submit" value="Cadastre-se"  style="background-color: #008211; color: white;">
       </div>
     </form>
   </section>

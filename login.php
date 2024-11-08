@@ -97,11 +97,16 @@
 
           $_SESSION['id'] = $usuario['id'];
           $_SESSION['nome'] = $usuario['nome'];
-          $_SESSION['dtnascimento'] = $usuario['dtnascimento'];
           $_SESSION['email'] = $usuario['email'];
           $_SESSION['usuario'] = $usuario['usuario'];
+          $_SESSION['cpf'] = $usuario['cpf'];
+          $_SESSION['endereco'] = $usuario['endereco'];
+          $_SESSION['cep'] = $usuario['cep'];
+          $_SESSION['dataNs'] = $usuario['dataNs'];
+          $_SESSION['numeroTel'] = $usuario['numeroTel'];
+          $_SESSION['senha'] = $usuario['senha'];
 
-          header("Location: principal.php");
+          header("Location: index.php");
           exit();
         } else {
           echo "<p class='text-lg text-center mt-4'>Falha! Usuário e/ou senha incorretos</p>";

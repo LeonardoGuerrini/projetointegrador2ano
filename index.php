@@ -1,3 +1,7 @@
+<?php
+  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -65,10 +69,21 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <?php if (isset($_SESSION['usuario'])): ?>
+              <!-- Usuário logado -->
+              <li><a class="dropdown-item" href="meuperfil.php">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php else: ?>
+              <!-- Usuário não logado -->
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+            <?php endif; ?>
           </ul>
         </div>
+
+        <?php
+          
+        ?>
 
         <form class="d-flex" role="search">
           <input

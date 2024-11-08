@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 07/11/2024 às 16:12
+-- Tempo de geração: 08/11/2024 às 12:46
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -55,6 +55,20 @@ CREATE TABLE `carrinho` (
 -- --------------------------------------------------------
 
 --
+-- Estrutura para tabela `compras`
+--
+
+CREATE TABLE `compras` (
+  `id_compra` int(11) NOT NULL,
+  `id_cliente` int(11) DEFAULT NULL,
+  `dtcompra` date DEFAULT NULL,
+  `valortotal` decimal(7,1) DEFAULT NULL,
+  `metodo` varchar(40) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura para tabela `livro`
 --
 
@@ -91,6 +105,12 @@ ALTER TABLE `carrinho`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `compras`
+--
+ALTER TABLE `compras`
+  ADD PRIMARY KEY (`id_compra`);
+
+--
 -- Índices de tabela `livro`
 --
 ALTER TABLE `livro`
@@ -111,6 +131,12 @@ ALTER TABLE `cadastro`
 --
 ALTER TABLE `carrinho`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `compras`
+--
+ALTER TABLE `compras`
+  MODIFY `id_compra` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `livro`

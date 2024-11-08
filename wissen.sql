@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08/11/2024 às 12:46
+-- Tempo de geração: 08/11/2024 às 13:05
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -33,6 +33,8 @@ CREATE TABLE `cadastro` (
   `email` varchar(255) DEFAULT NULL,
   `usuario` varchar(40) DEFAULT NULL,
   `cpf` int(11) DEFAULT NULL,
+  `endereco` varchar(255) DEFAULT NULL,
+  `cep` int(8) DEFAULT NULL,
   `dataNs` date DEFAULT NULL,
   `numeroTel` int(11) DEFAULT NULL,
   `senha` varchar(50) DEFAULT NULL

@@ -1,30 +1,32 @@
 <?php
 include('conexao.php');
 
-if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) && isset($_POST['cpf']) && isset($_POST['dataNs']) && isset($_POST['numeroTel']) && isset($_POST(['senha']))){
-    $nome = $mysqli->real_escape_string($_POST['nome']);
-    $email = $mysqli->real_escape_string($_POST['email']);
-    $usuario = $mysqli->real_escape_string($_POST['usuario']);
-    $cpf = $mysqli->real_escape_string($_POST['cpf']);
-    $dataNs = $mysqli->real_escape_string($_POST['dataNs']);
-    $numeroTel = $mysqli->real_escape_string($_POST['numeroTel']);
-    $senha = $mysqli->real_escape_string($_POST['senha']);
+if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) && isset($_POST['cpf']) && isset($_POST['endereco']) && isset($_POST['cep']) && isset($_POST['dataNs']) && isset($_POST['numeroTel']) && isset($_POST['senha'])) {
+  $nome = $mysqli->real_escape_string($_POST['nome']);
+  $email = $mysqli->real_escape_string($_POST['email']);
+  $usuario = $mysqli->real_escape_string($_POST['usuario']);
+  $cpf = $mysqli->real_escape_string($_POST['cpf']);
+  $endereco = $mysqli->real_escape_string($_POST['endereco']);
+  $cep = $mysqli->real_escape_string($_POST['cep']);
+  $dataNs = $mysqli->real_escape_string($_POST['dataNs']);
+  $numeroTel = $mysqli->real_escape_string($_POST['numeroTel']);
+  $senha = $mysqli->real_escape_string($_POST['senha']);
 
-    // Verificar se o usuário já existe
-    $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario'";
-    $sql_query = $mysqli->query($sql);
+  // Verificar se o usuário já existe
+  $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario'";
+  $sql_query = $mysqli->query($sql);
 
-    if($sql_query->num_rows > 0){
-        echo "<p class='text-center text-lg m-4 underline'>Usuário já cadastrado</p>";
-    } else{
-        $sql = "INSERT INTO cadastro(nome, email, usuario, cpf, dataNs, numeroTel, senha) VALUES ('$nome', '$email', '$usuario', '$cpf', '$dataNs', '$numeroTel', '$senha')";
+  if ($sql_query->num_rows > 0) {
+    echo "<p class='text-center text-lg m-4 underline'>Usuário já cadastrado</p>";
+  } else {
+    $sql = "INSERT INTO cadastro(nome, email, usuario, cpf, endereco, cep, dataNs, numeroTel, senha) VALUES ('$nome', '$email', '$usuario', '$cpf', '$endereco', '$cep', '$dataNs', '$numeroTel', '$senha')";
 
-        if($mysqli->query($sql) === TRUE){
-            echo "<p class='text-center text-lg m-4 underline'>Cadastro realizado com sucesso!</p>";
-        } else{
-            echo "<p class='text-center text-lg m-4 underline'>Erro: </p>". $mysqli->error;
-        }
+    if ($mysqli->query($sql) === TRUE) {
+      echo "<p class='text-center text-lg m-4 underline'>Cadastro realizado com sucesso!</p>";
+    } else {
+      echo "<p class='text-center text-lg m-4 underline'>Erro: </p>" . $mysqli->error;
     }
+  }
 }
 
 ?>
@@ -120,6 +122,12 @@ if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) &
       <label for="cpf">CPF</label>
       <input type="text" name="cpf" id="cpf" placeholder="Ex.: 12345678910" pattern="[0-9]{11}" maxlength="11" required>
 
+      <label for="endereco">Endereço</label>
+      <input type="text" name="endereco" if="endereco" placeholder="Rua... Nº123" required>
+
+      <label for="cep">CEP</label>
+      <input type="text" name="cep" if="cep" placeholder="12345678" pattern= "\d{5}?\d{3}" maxlength="8" required>
+
       <label for="dataNs">Data de Nascimento</label>
       <input type="date" name="dataNs" id="dataNs">
 
@@ -132,7 +140,7 @@ if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) &
 
       <br><br>
       <div class="btnsLogin">
-        <input type="button" value="Cadastre-se" onclick="window.open('cadastro.html', '_self')">
+        <input type="button" value="Cadastre-se" onclick="window.open('cadastro.php', '_self')" style="background-color: #008211; color: white;">
       </div>
     </form>
   </section>

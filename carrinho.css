@@ -1,0 +1,117 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    section img{
+        border: 1px solid black;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    
+        
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {     
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+
+
+
+@font-face {
+    font-family: Tan-Pearl;
+    src: url(Fontes/tan-pearl.otf);
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.content{
+    flex: 1;
+}
+
+.navbar{
+    background-color: rgb(17, 17, 17) !important;
+}
+
+.navbar-brand{
+    font-family: Tan-Pearl;
+    letter-spacing: 1px;
+}
+
+.btn-outline-success{
+    color: white;
+    border-color: white;
+    --bs-btn-active-bg: white;
+    --bs-btn-color: white;
+    --bs-btn-border-color: black;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-border-color: black;
+    --bs-btn-active-border-color: black;
+    --bs-btn-active-color: black;
+
+}
+
+.btn-outline-success:hover{
+    color: black;
+    background-color: white;
+    border-color: black;
+}
+
+.btn-outline-success:active{
+    background-color: black;
+    color: black;
+}
+
+.btnComprarCard{
+    border: none;
+    color: white !important;
+    background-color: #28a745;
+    border-radius: 5px;
+    /* padding: 5px 10px 5px 10px; */
+}
+
+.classComprarCard{
+    color: white !important;
+}
+
+a{
+    text-decoration: none;
+}
+
+#bannerdesconto02{
+    display: none;
+}
+
+.divCategorias{
+    margin-top: 20px;
+}
+
+
+.dropdown{
+    margin-right: 10px;
+}
+
+.dropdown button{
+    background-color: rgb(17, 17, 17);
+    color: #cccccc  ;
+}
+
+.btn-secondary, .dropdown-menu{
+    background-color: rgb(17, 17, 17) !important;
+}

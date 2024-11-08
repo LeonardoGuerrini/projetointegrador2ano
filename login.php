@@ -1,42 +1,3 @@
-<?php
-include('conexao.php');
-session_start();
-
-if (isset($_POST['usuario']) || isset($_POST['senha'])){
-    if(strlen($_POST['usuario']) == 0){
-        echo "Preencha seu usuário";
-    } else if(strlen($_POST['senha']) == 0){
-        echo "Preencha sua senha";
-    } else {
-        $usuario = $mysqli->real_escape_string($_POST['usuario']);
-        $senha = $mysqli->real_escape_string($_POST['senha']);
-
-        $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
-        $sql_query = $mysqli->query($sql) or die("Falha ao executar código sql: ". $mysqli->error);
-
-        $qtde = $sql_query->num_rows;
-        if($qtde == 1){
-            $usuario = $sql_query->fetch_assoc();
-
-            if(!isset($_SESSION)){
-                session_start();
-            }
-
-            $_SESSION['id'] = $usuario['id'];
-            $_SESSION['nome'] = $usuario['nome'];
-            $_SESSION['dtnascimento'] = $usuario['dtnascimento'];
-            $_SESSION['email'] = $usuario['email'];
-            $_SESSION['usuario'] = $usuario['usuario'];
-
-            header("Location: principal.php");
-            exit();
-        } else{
-            echo "<p class='text-lg text-center mt-4'>Falha! Usuário e/ou senha incorretos</p>";
-        }
-    }
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -52,7 +13,7 @@ if (isset($_POST['usuario']) || isset($_POST['senha'])){
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Wissen</a>
       <button
@@ -62,8 +23,7 @@ if (isset($_POST['usuario']) || isset($_POST['senha'])){
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -102,8 +62,7 @@ if (isset($_POST['usuario']) || isset($_POST['senha'])){
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>
@@ -111,6 +70,45 @@ if (isset($_POST['usuario']) || isset($_POST['senha'])){
       </div>
     </div>
   </nav>
+
+  <?php
+    include('conexao.php');
+    session_start();
+
+    if (isset($_POST['usuario']) || isset($_POST['senha'])) {
+      if (strlen($_POST['usuario']) == 0) {
+        echo "Preencha seu usuário";
+      } else if (strlen($_POST['senha']) == 0) {
+        echo "Preencha sua senha";
+      } else {
+        $usuario = $mysqli->real_escape_string($_POST['usuario']);
+        $senha = $mysqli->real_escape_string($_POST['senha']);
+
+        $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' AND senha = '$senha'";
+        $sql_query = $mysqli->query($sql) or die("Falha ao executar código sql: " . $mysqli->error);
+
+        $qtde = $sql_query->num_rows;
+        if ($qtde == 1) {
+          $usuario = $sql_query->fetch_assoc();
+
+          if (!isset($_SESSION)) {
+            session_start();
+          }
+
+          $_SESSION['id'] = $usuario['id'];
+          $_SESSION['nome'] = $usuario['nome'];
+          $_SESSION['dtnascimento'] = $usuario['dtnascimento'];
+          $_SESSION['email'] = $usuario['email'];
+          $_SESSION['usuario'] = $usuario['usuario'];
+
+          header("Location: principal.php");
+          exit();
+        } else {
+          echo "<p class='text-lg text-center mt-4'>Falha! Usuário e/ou senha incorretos</p>";
+        }
+      }
+    }
+  ?>
 
   <div class="titulologin">
     <h1>Entrar</h1>
@@ -125,7 +123,7 @@ if (isset($_POST['usuario']) || isset($_POST['senha'])){
       <a href="" id="esqueciasenha">Esqueceu a senha?</a>
       <br>
       <div class="btnsLogin">
-        <input type="button" value="Cadastre-se" onclick="window.open('cadastro.html', '_self')">
+        <input type="button" value="Cadastre-se" onclick="window.open('cadastro.php', '_self')">
         <input type="submit" value="Entrar" id="btnEntrar">
       </div>
     </form>

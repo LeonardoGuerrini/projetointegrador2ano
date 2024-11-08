@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Wissen</a>
       <button
@@ -22,8 +22,7 @@
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -53,10 +52,8 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <li><a class="dropdown-item" href="login.php">Login</a></li>
+            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">
@@ -64,8 +61,7 @@
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>
@@ -75,26 +71,23 @@
   </nav>
 
   <section>
-    <img src="Img/fahrenheit451.svg" alt="" class="comprar">
+    <img src="Img/AsArmasDaPesuasao.jpg" alt="" class="comprar">
     <div class="text-desc">
       <p class="produto">
-        Fahrenhait 451
+        As Armas da Persuasão
       </p>
       <p class="desc" style="color: rgb(0, 0, 0);">
-      Fahrenheit 451 é um romance distópico de ficção científica soft, escrito por Ray Bradbury e publicado pela primeira vez em 1953.</p>
+        Depois de passar anos caindo na lábia de vendedores, arrecadadores de doações e operadores de telemarketing, o psicólogo Robert B. Cialdini resolveu se dedicar ao estudo da persuasão.</p>
       <div class="btns">
-      <a href="#">
-      <button class="btn-compra" type="button">Comprar Agora</button>
+        <a href="#">
+          <button class="btn-compra" type="button">Comprar</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
+          <button class="btn-compra" type="button">Carrinho</button>
         </a>
       </div>
     </div>
   </section>
-
-
-
 
   <footer>
     <h1 class="footer-titulo">Wissen</h1>

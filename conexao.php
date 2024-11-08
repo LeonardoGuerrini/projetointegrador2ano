@@ -1,7 +1,7 @@
 <?php
     $driver = "mysql";
     $host = "localhost";
-    $dbname = "cadastrolivros";
+    $dbname = "wissen";
     $username = "root";
     $senha = '';
     $mysqli = new mysqli($host, $username, $senha, $dbname);

@@ -53,10 +53,8 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <li><a class="dropdown-item" href="login.php">Login</a></li>
+            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">
@@ -84,11 +82,11 @@
         Invista em Imoveis com Pouco Dinheiro.
       </p>
       <div class="btns">
-      <a href="#">
-      <button class="btn-compra" type="button">Comprar Agora</button>
+        <a href="#">
+          <button class="btn-compra" type="button">Comprar</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
+          <button class="btn-compra" type="button">Carrinho</button>
         </a>
       </div>
     </div>

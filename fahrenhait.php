@@ -53,8 +53,10 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">
@@ -73,19 +75,19 @@
   </nav>
 
   <section>
-    <img src="Img/AsArmasDaPesuasao.jpg" alt="" class="comprar">
+    <img src="Img/fahrenheit451.svg" alt="" class="comprar">
     <div class="text-desc">
       <p class="produto">
-        As Armas da Persuasão
+        Fahrenhait 451
       </p>
       <p class="desc" style="color: rgb(0, 0, 0);">
-        Depois de passar anos caindo na lábia de vendedores, arrecadadores de doações e operadores de telemarketing, o psicólogo Robert B. Cialdini resolveu se dedicar ao estudo da persuasão.</p>
+      Fahrenheit 451 é um romance distópico de ficção científica soft, escrito por Ray Bradbury e publicado pela primeira vez em 1953.</p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+      <a href="#">
+      <button class="btn-compra" type="button">Comprar Agora</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

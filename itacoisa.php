@@ -84,11 +84,11 @@
         Um palhaço assassino
       </p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+      <a href="#">
+      <button class="btn-compra" type="button">Comprar Agora</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

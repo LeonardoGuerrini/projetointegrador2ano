@@ -12,7 +12,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Wissen</a>
       <button
@@ -22,8 +22,7 @@
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -55,7 +54,9 @@
           <ul class="dropdown-menu dropdown-menu-dark">
             <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
             <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
             <li><a class="dropdown-item" href="#">Sair</a></li>
           </ul>
         </div>
@@ -64,8 +65,7 @@
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>
@@ -84,11 +84,11 @@
         A Sutil Arte de Ligar o Foda-se.
       </p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+      <a href="#">
+      <button class="btn-compra" type="button">Comprar Agora</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

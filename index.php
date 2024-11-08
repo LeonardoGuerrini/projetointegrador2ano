@@ -157,7 +157,7 @@
                 <h5>A Sútil Arte de Ligar o F*da-se</h5>
                 <p>R$34,99</p>
                 <button class="btnComprarCard">
-                  <a href="artedofds.php" class="classComprarCard"
+                  <a href="asutilartedofds.php" class="classComprarCard"
                     >Comprar
                     <span class="material-symbols-outlined shopping_cart"
                       >add_shopping_cart</span
@@ -176,7 +176,7 @@
                 <h5>Fahrenheit 451</h5>
                 <p>R$32,99</p>
                 <button class="btnComprarCard">
-                  <a href="#" class="classComprarCard"
+                  <a href="fahrenhait.php" class="classComprarCard"
                     >Comprar
                     <span class="material-symbols-outlined shopping_cart"
                       >add_shopping_cart</span

@@ -68,8 +68,10 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">
@@ -107,7 +109,7 @@
             </h6>
             <p class="card-valor">R$27,70</p>
             <button class="btnComprarCard">
-              <a href="invistaemimoveis.html" class="classComprarCard"
+              <a href="invistaemimoveis.php" class="classComprarCard"
                 >Comprar
                 <span class="material-symbols-outlined shopping_cart"
                   >add_shopping_cart</span
@@ -124,7 +126,7 @@
             <h6 class="card-titulo" style="margin-top: 8px;">Pai Rico, Pai Pobre</h6>
             <p class="card-valor">R$29,99</p>
             <button class="btnComprarCard">
-              <a href="pairico.html" class="classComprarCard"
+              <a href="pairico.php" class="classComprarCard"
                 >Comprar
                 <span class="material-symbols-outlined shopping_cart"
                   >add_shopping_cart</span
@@ -135,12 +137,12 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/demonslayervol1.svg" alt="Demon Slayer Volume 01">
+          <img src="Img/OsCodigodoMilhao.jpg" alt="Demon Slayer Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo">Demon Slayer Vol. 01</h6>
+            <h6 class="card-titulo">Os Codigos do Milhão</h6>
             <p class="card-valor">R$26,49</p>
             <button class="btnComprarCard">
-              <a href="demon.html" class="classComprarCard"
+              <a href="#" class="classComprarCard"
                 >Comprar
                 <span class="material-symbols-outlined shopping_cart"
                   >add_shopping_cart</span
@@ -151,9 +153,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/sakamotodays03.svg" alt="Sakamoto Days Volume 03">
+          <img src="Img/DoMilaoMilhao.jpg" alt="Sakamoto Days Volume 03">
           <div class="card-texto">
-            <h6 class="card-titulo">Sakamoto Days Vol. 03</h6>
+            <h6 class="card-titulo">Do Mil ao Milhão</h6>
             <p class="card-valor">R$21,89</p>
             <button class="btnComprarCard">
               <a href="#" class="classComprarCard"
@@ -167,9 +169,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/demonslayervol02.svg" alt="Demon Slayer Volume 02">
+          <img src="Img/OReidosDividendos.jpg" alt="Demon Slayer Volume 02">
           <div class="card-texto">
-            <h6 class="card-titulo">Demon Slayer Vol. 02</h6>
+            <h6 class="card-titulo">O Rei dos Dividendos</h6>
             <p class="card-valor">R$34,90</p>
             <button class="btnComprarCard">
               <a href="#" class="classComprarCard"
@@ -183,9 +185,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/demonslayervol03.svg" alt="Demon Slayer Volume 03">
+          <img src="Img/CasaisCrecemJuntos.jpg" alt="Demon Slayer Volume 03">
           <div class="card-texto">
-            <h6 class="card-titulo">Demon Slayer Vol. 03</h6>
+            <h6 class="card-titulo">Casais Inteligentes</h6>
             <p class="card-valor">R$34,90</p>
             <button class="btnComprarCard">
               <a href="#" class="classComprarCard"

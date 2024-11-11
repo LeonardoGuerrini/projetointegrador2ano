@@ -525,17 +525,20 @@
       }
     
       section {
+        display: flex;
+        flex-direction: row;
         text-align: center;
+        margin-top: 2%;
       }
     
       .comprar {
-        width: 15%;
-        margin-top: 10px;
+        width: 20%;
         border: 1px solid black;
+        margin-left: 15%;
       }
     
       .produto {
-        font-size: 30px;
+        font-size: 36px;
         color: rgb(0, 0, 0);
         margin-top: 10px;
       }
@@ -549,7 +552,7 @@
       .desc {
         text-align: center;
         margin: auto;
-        font-size: 20px;
+        font-size: 18px;
         width: 60%;
         margin-bottom: 25px;
       }

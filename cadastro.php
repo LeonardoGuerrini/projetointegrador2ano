@@ -122,7 +122,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
 
   <section class="login content">
     <form action="" method="post">
-      <label for="nome">Nome</label>
+      <label for="nome">Nome Completo</label>
       <input type="text" name="nome" id="nome" required>
 
       <label for="email">Email</label>

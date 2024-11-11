@@ -86,10 +86,22 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <?php if (isset($_SESSION['usuario'])): ?>
+              <!-- Usuário logado -->
+              <li><a class="dropdown-item" href="meuperfil.php">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php else: ?>
+              <!-- Usuário não logado -->
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+            <?php endif; ?>
           </ul>
         </div>
+
+        <?php
+
+        ?>
+
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -126,7 +138,7 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
       <input type="text" name="endereco" if="endereco" placeholder="Rua... Nº123" required>
 
       <label for="cep">CEP</label>
-      <input type="text" name="cep" if="cep" placeholder="12345678" pattern= "\d{5}?\d{3}" maxlength="8" required>
+      <input type="text" name="cep" if="cep" placeholder="12345678" pattern="\d{5}?\d{3}" maxlength="8" required>
 
       <label for="dataNs">Data de Nascimento</label>
       <input type="date" name="dataNs" id="dataNs">
@@ -139,9 +151,9 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
       <input type="password" name="senha" id="senha" required>
 
       <br><br>
-      
+
       <div class="btnsLogin">
-        <input type="submit" value="Cadastre-se"  style="background-color: #008211; color: white;">
+        <input type="submit" value="Cadastre-se" style="background-color: #008211; color: white;">
       </div>
     </form>
   </section>

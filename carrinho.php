@@ -1,5 +1,14 @@
+<?php
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
+// Verifica se a variável de sessão 'id' está definida
+if (!isset($_SESSION['id'])) {
+  header("Location: index.php"); // Redireciona para a página de login se não estiver logado
+  exit(); // Para a execução do script após o redirecionamento
+}
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8" />
@@ -66,10 +75,21 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <?php if (isset($_SESSION['usuario'])): ?>
+              <!-- Usuário logado -->
+              <li><a class="dropdown-item" href="meuperfil.php">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php else: ?>
+              <!-- Usuário não logado -->
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+            <?php endif; ?>
           </ul>
         </div>
+
+        <?php
+
+        ?>
 
         <form class="d-flex" role="search">
           <input
@@ -87,24 +107,24 @@
 
   <section>
     <div>
-        <img src="Img/berserk.svg" alt="Berserk Volume 01">
-        <p>Berserk Volume 01</p>
-        <p>Quantidade:</p>
-        <p>Valor do produto:</p>
+      <img src="Img/berserk.svg" alt="Berserk Volume 01">
+      <p>Berserk Volume 01</p>
+      <p>Quantidade:</p>
+      <p>Valor do produto:</p>
     </div>
     <div>
-        <form action="" method="post">
-            <input type="number" name="cep" id="cep" pattern="\d{5}-?\d{3}" required>
-            <button>Calcular Frete</button>
-            <p>Valor do Frete:</p>
-            <p>Valor Total:</p>
-            <p>Método de Pagamento</p>
-            <label for="cartaoCred">Cartão de Crédito</label>
-            <input type="radio" name="metodoPag" id="cartaoCred" value="Cartão de Crédito">
-            <label for="pix">PIX</label>
-            <input type="radio" name="metodoPag" id="pix" value="PIX">
-            <input type="submit" value="Pagamento">
-        </form>
+      <form action="" method="post">
+        <input type="number" name="cep" id="cep" pattern="\d{5}-?\d{3}" required>
+        <button>Calcular Frete</button>
+        <p>Valor do Frete:</p>
+        <p>Valor Total:</p>
+        <h2>Método de Pagamento</h2>
+        <label for="cartaoCred">Cartão de Crédito</label>
+        <input type="radio" name="metodoPag" id="cartaoCred" value="Cartão de Crédito">
+        <label for="pix">PIX</label>
+        <input type="radio" name="metodoPag" id="pix" value="PIX">
+        <input type="submit" value="Pagamento">
+      </form>
 
     </div>
   </section>

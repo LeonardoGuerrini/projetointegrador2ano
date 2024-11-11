@@ -1,5 +1,10 @@
+<?php
+  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +42,7 @@
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -68,19 +72,28 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <?php if (isset($_SESSION['usuario'])): ?>
+              <!-- Usuário logado -->
+              <li><a class="dropdown-item" href="meuperfil.php">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php else: ?>
+              <!-- Usuário não logado -->
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+            <?php endif; ?>
           </ul>
         </div>
+
+        <?php
+          
+        ?>
+
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>

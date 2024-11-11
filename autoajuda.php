@@ -1,5 +1,9 @@
+<?php
+  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -37,8 +41,7 @@
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -68,19 +71,28 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <?php if (isset($_SESSION['usuario'])): ?>
+              <!-- Usuário logado -->
+              <li><a class="dropdown-item" href="meuperfil.php">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php else: ?>
+              <!-- Usuário não logado -->
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+            <?php endif; ?>
           </ul>
         </div>
+
+        <?php
+          
+        ?>
+
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>
@@ -102,14 +114,14 @@
       <div class="principal-div">
         
         <div class="div-cards">
-          <img src="Img/Umdiasemreclamar.svg" alt="Chainsaw Man Volume 01">
+          <img src="Img/Invista em imóveis com pouco dinheiro.svg" alt="Chainsaw Man Volume 01">
           <div class="card-texto">
             <h6 class="card-titulo">
-              Um Dia Sem Reclamar
+              Invista em Imoveis com pouco Dinheiro
             </h6>
             <p class="card-valor">R$27,70</p>
             <button class="btnComprarCard">
-              <a href="umdiasemreclamar.php" class="classComprarCard"
+              <a href="invistaemimoveis.php" class="classComprarCard"
                 >Comprar
                 <span class="material-symbols-outlined shopping_cart"
                   >add_shopping_cart</span
@@ -121,12 +133,12 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/asutilarte.svg" alt="Berserk Volume 01">
+          <img src="Img/Pai Rico, Pai Pobre.svg" alt="Berserk Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo">A Arte</h6>
+            <h6 class="card-titulo" style="margin-top: 8px;">Pai Rico, Pai Pobre</h6>
             <p class="card-valor">R$29,99</p>
             <button class="btnComprarCard">
-              <a href="pairico.html" class="classComprarCard"
+              <a href="pairico.php" class="classComprarCard"
                 >Comprar
                 <span class="material-symbols-outlined shopping_cart"
                   >add_shopping_cart</span
@@ -137,9 +149,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/A Lei da Atração.svg" alt="Demon Slayer Volume 01">
+          <img src="Img/demonslayervol1.svg" alt="Demon Slayer Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo">A Lei da Atração</h6>
+            <h6 class="card-titulo">Demon Slayer Vol. 01</h6>
             <p class="card-valor">R$26,49</p>
             <button class="btnComprarCard">
               <a href="demon.html" class="classComprarCard"

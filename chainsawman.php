@@ -1,5 +1,5 @@
 <?php
-session_start(); // Inicia a sessão, ou retoma uma sessão existente
+  session_start(); // Inicia a sessão, ou retoma uma sessão existente
 ?>
 
 <!DOCTYPE html>
@@ -88,28 +88,23 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
   </nav>
 
   <section>
-    <img src="Img/AsArmasDaPersuasao.jpg" alt="As Armas da Persuasão" class="comprar">
+    <img src="Img/chainsawmanvol1.svg" alt="" class="comprar">
     <div class="text-desc">
       <p class="produto">
-        As Armas da Persuasão
+        Chainsaw Man Vol.1
       </p>
       <p class="desc" style="color: rgb(0, 0, 0);">
-        Depois de passar anos caindo na lábia de vendedores, arrecadadores de doações e operadores de telemarketing, o psicólogo Robert B. Cialdini resolveu se dedicar ao estudo da persuasão.</p>
+        Em um mundo onde demonios são reais, Tanjirou um vendedor de carvão tende a ter aventuras incriveis.</p>
       <div class="btns">
         <a href="#">
           <button class="btn-compra" type="button">Comprar</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
+          <button class="btn-compra" type="button">Carrinho</button>
         </a>
       </div>
     </div>
   </section>
-
-  <?php
-    
-
-  ?>
 
 
 

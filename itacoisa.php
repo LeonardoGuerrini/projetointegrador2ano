@@ -1,5 +1,10 @@
+<?php
+  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+?>
+
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -9,10 +14,11 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="pag.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.php">Wissen</a>
       <button
@@ -22,8 +28,7 @@
         data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -53,19 +58,28 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
+            <?php if (isset($_SESSION['usuario'])): ?>
+              <!-- Usuário logado -->
+              <li><a class="dropdown-item" href="meuperfil.php">Meu Perfil</a></li>
+              <li><a class="dropdown-item" href="logout.php">Sair</a></li>
+            <?php else: ?>
+              <!-- Usuário não logado -->
+              <li><a class="dropdown-item" href="login.php">Login</a></li>
+              <li><a class="dropdown-item" href="cadastro.php">Cadastro</a></li>
+            <?php endif; ?>
           </ul>
         </div>
+
+        <?php
+
+        ?>
+
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
             type="search"
             placeholder="Pesquisar"
-            aria-label="Search"
-          />
+            aria-label="Search" />
           <button class="btn btn-outline-success" type="submit">
             <span class="material-symbols-outlined">search</span>
           </button>
@@ -84,8 +98,8 @@
         Um palhaço assassino
       </p>
       <div class="btns">
-      <a href="#">
-      <button class="btn-compra" type="button">Comprar Agora</button>
+        <a href="#">
+          <button class="btn-compra" type="button">Comprar Agora</button>
         </a>
         <a href="#">
           <button class="btn-compra" type="button">Adicionar ao Carrinho</button>

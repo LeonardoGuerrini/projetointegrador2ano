@@ -1,5 +1,5 @@
 <?php
-session_start(); // Inicia a sessão, ou retoma uma sessão existente
+  session_start(); // Inicia a sessão, ou retoma uma sessão existente
 ?>
 
 <!DOCTYPE html>
@@ -88,7 +88,7 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
   </nav>
 
   <section>
-    <img src="Img/AsArmasDaPersuasao.jpg" alt="As Armas da Persuasão" class="comprar">
+    <img src="Img/AsArmasDaPesuasao.jpg" alt="" class="comprar">
     <div class="text-desc">
       <p class="produto">
         As Armas da Persuasão
@@ -100,19 +100,11 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
           <button class="btn-compra" type="button">Comprar</button>
         </a>
         <a href="#">
-          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
+          <button class="btn-compra" type="button">Carrinho</button>
         </a>
       </div>
     </div>
   </section>
-
-  <?php
-    
-
-  ?>
-
-
-
 
   <footer>
     <h1 class="footer-titulo">Wissen</h1>

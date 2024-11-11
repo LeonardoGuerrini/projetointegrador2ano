@@ -68,8 +68,10 @@
             Minha Conta
           </button>
           <ul class="dropdown-menu dropdown-menu-dark">
-            <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="cadastro.php">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="#">Meu Perfil</a></li>
+            <li><a class="dropdown-item" href="#">Configurações</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sair</a></li>
           </ul>
         </div>
         <form class="d-flex" role="search">
@@ -100,14 +102,14 @@
       <div class="principal-div">
         
         <div class="div-cards">
-          <img src="Img/Invista em imóveis com pouco dinheiro.svg" alt="Chainsaw Man Volume 01">
+          <img src="Img/Umdiasemreclamar.svg" alt="Chainsaw Man Volume 01">
           <div class="card-texto">
             <h6 class="card-titulo">
-              Invista em Imoveis com pouco Dinheiro
+              Um Dia Sem Reclamar
             </h6>
             <p class="card-valor">R$27,70</p>
             <button class="btnComprarCard">
-              <a href="invistaemimoveis.html" class="classComprarCard"
+              <a href="umdiasemreclamar.php" class="classComprarCard"
                 >Comprar
                 <span class="material-symbols-outlined shopping_cart"
                   >add_shopping_cart</span
@@ -119,9 +121,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/Pai Rico, Pai Pobre.svg" alt="Berserk Volume 01">
+          <img src="Img/asutilarte.svg" alt="Berserk Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo" style="margin-top: 8px;">Pai Rico, Pai Pobre</h6>
+            <h6 class="card-titulo">A Arte</h6>
             <p class="card-valor">R$29,99</p>
             <button class="btnComprarCard">
               <a href="pairico.html" class="classComprarCard"
@@ -135,9 +137,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/demonslayervol1.svg" alt="Demon Slayer Volume 01">
+          <img src="Img/A Lei da Atração.svg" alt="Demon Slayer Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo">Demon Slayer Vol. 01</h6>
+            <h6 class="card-titulo">A Lei da Atração</h6>
             <p class="card-valor">R$26,49</p>
             <button class="btnComprarCard">
               <a href="demon.html" class="classComprarCard"

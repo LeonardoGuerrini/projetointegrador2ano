@@ -114,10 +114,10 @@
       <div class="principal-div">
         
         <div class="div-cards">
-          <img src="Img/Invista em imóveis com pouco dinheiro.svg" alt="Chainsaw Man Volume 01">
+          <img src="Img/asutilarte.svg" alt="Chainsaw Man Volume 01">
           <div class="card-texto">
             <h6 class="card-titulo">
-              Invista em Imoveis com pouco Dinheiro
+              A Sutil arte de Ligar o Foda-se
             </h6>
             <p class="card-valor">R$27,70</p>
             <button class="btnComprarCard">
@@ -133,9 +133,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/Pai Rico, Pai Pobre.svg" alt="Berserk Volume 01">
+          <img src="Img/Umdiasemreclamar.svg" alt="Berserk Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo" style="margin-top: 8px;">Pai Rico, Pai Pobre</h6>
+            <h6 class="card-titulo" style="margin-top: 8px;">Um dia sem Reclamar</h6>
             <p class="card-valor">R$29,99</p>
             <button class="btnComprarCard">
               <a href="pairico.php" class="classComprarCard"
@@ -149,9 +149,9 @@
         </div>
 
         <div class="div-cards">
-          <img src="Img/demonslayervol1.svg" alt="Demon Slayer Volume 01">
+          <img src="Img/O Milagre da Manha.svg" alt="Demon Slayer Volume 01">
           <div class="card-texto">
-            <h6 class="card-titulo">Demon Slayer Vol. 01</h6>
+            <h6 class="card-titulo">O Milagre da Manhã</h6>
             <p class="card-valor">R$26,49</p>
             <button class="btnComprarCard">
               <a href="demon.html" class="classComprarCard"

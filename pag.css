@@ -11,96 +11,36 @@
     text-align: center;
   }
 
-  .carrinho {
-    color: rgb(98, 98, 98);
-    font-size: 30px;
+  .comprar {
+    width: 60%;
+    margin-top: 10px;
+    border: 1px solid black;
   }
+
+  .produto {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+  }
+
   .text-desc {
     text-align: center;
     margin: auto;
     width: 100%;
   }
 
-  .divPrincipal {
-    margin-top: 10%;
-    background-color: white;
-    color: rgb(0, 0, 0);
-    border: 1px #000000 solid;
-    margin: 10px;
-    border-radius: 10px;
-  }
-
-  .divPrincipal img {
-    margin-top: 5%;
-  }
-  .livros {
-    border: 1px solid #cccccc;
-    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.075);
-    border-radius: 14px;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    float: left;
-    margin: auto;
-  }
   .desc {
     text-align: center;
-    margin-top: 0%;
-    font-size: 16px;
-  }
-  .btn-compra {
-    margin: 10px;
-  }
-
-  footer {
-    display: end;
-    flex-direction: end;
-    text-align: center;
-    background-color: #1a1a1a;
-    margin-top: auto;
-  }
-
-  .footer-titulo {
-    font-family: Tan-Pearl;
-    color: white;
-    margin-top: 20px;
-  }
-
-  .footer-item {
-    color: #9b9b9b;
-    text-decoration: underline;
-    font-size: 14px;
-    margin-right: 5px;
-  }
-
-  .footer-p {
-    color: #9b9b9b;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  .mangas {
-    width: 120px;
     margin: auto;
-    color: #000000;
-    text-justify: auto;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 25px;
   }
-  .livros a {
-    color: #000000;
+
+  .btn-compra {
+    margin-bottom: 10px;
   }
-  .livros a:hover {
-    color: #004b88;
-  }
-  .comprar {
-    width: 60%;
-    margin-top: 10px;
-  }
-  .produto {
-    font-size: 32px;
-    color: rgb(0, 0, 0);
-    margin-top: 9px;
-    margin-left: 9px;
-  }
+
   .glow-on-hover {
     width: 220px;
     height: 50px;
@@ -184,23 +124,525 @@
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  ...;
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  .navbar-nav {
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    font-size: 36px;
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .comprar {
+    width: 60%;
+    margin-top: 10px;
+    border: 1px solid black;
+  }
+
+  .produto {
+    font-size: 28px;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+  }
+
+  .text-desc {
+    text-align: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .desc {
+    text-align: center;
+    margin: auto;
+    font-size: 16px;
+    width: 80%;
+    margin-bottom: 25px;
+  }
+
+  .btn-compra {
+    margin-bottom: 10px;
+  }
+
+  .glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    margin-top: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .glow-on-hover:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ffffff,
+      #000000,
+      #ffffff,
+      #000000,
+      #ffffff,
+      #000000,
+      #ffffff,
+      #000000,
+      #ffffff
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+
+  .glow-on-hover:active {
+    color: #000;
+  }
+
+  .glow-on-hover:active:after {
+    background: transparent;
+    color: #ffffff;
+  }
+
+  .glow-on-hover:hover:before {
+    opacity: 1;
+  }
+
+  .glow-on-hover:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #181717;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  ...;
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-nav {
+        font-size: 18px;
+      }
+    
+      .navbar-brand {
+        font-size: 36px;
+      }
+    
+      section {
+        text-align: center;
+      }
+    
+      .comprar {
+        width: 35%;
+        margin-top: 10px;
+        border: 1px solid black;
+      }
+    
+      .produto {
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+      }
+    
+      .text-desc {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+      }
+    
+      .desc {
+        text-align: center;
+        margin: auto;
+        font-size: 16px;
+        width: 80%;
+        margin-bottom: 25px;
+      }
+
+      .btns{
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .btn-compra {
+        margin-bottom: 10px;
+      }
+    
+      .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-top: auto;
+        left: auto;
+        right: auto;
+      }
+    
+      .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+    
+      .glow-on-hover:active {
+        color: #000;
+      }
+    
+      .glow-on-hover:active:after {
+        background: transparent;
+        color: #ffffff;
+      }
+    
+      .glow-on-hover:hover:before {
+        opacity: 1;
+      }
+    
+      .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #181717;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+    
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  ...;
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navbar-nav {
+        font-size: 18px;
+      }
+    
+      .navbar-brand {
+        font-size: 36px;
+      }
+    
+      section {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        margin-top: 2%;
+      }
+    
+      .comprar {
+        width: 30%;
+        border: 1px solid black;
+        margin-left: 10%;
+      }
+    
+      .produto {
+        font-size: 28px;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+      }
+    
+      .text-desc {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+      }
+    
+      .desc {
+        text-align: center;
+        margin: auto;
+        font-size: 16px;
+        width: 60%;
+        margin-bottom: 25px;
+      }
+
+      .btns{
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .btn-compra {
+        margin-bottom: 10px;
+      }
+    
+      .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-top: auto;
+        left: auto;
+        right: auto;
+      }
+    
+      .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+    
+      .glow-on-hover:active {
+        color: #000;
+      }
+    
+      .glow-on-hover:active:after {
+        background: transparent;
+        color: #ffffff;
+      }
+    
+      .glow-on-hover:hover:before {
+        opacity: 1;
+      }
+    
+      .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #181717;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+    
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  ...;
+    .navbar-nav {
+        font-size: 18px;
+      }
+    
+      .navbar-brand {
+        font-size: 36px;
+      }
+    
+      section {
+        text-align: center;
+      }
+    
+      .comprar {
+        width: 15%;
+        margin-top: 10px;
+        border: 1px solid black;
+      }
+    
+      .produto {
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+      }
+    
+      .text-desc {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+      }
+    
+      .desc {
+        text-align: center;
+        margin: auto;
+        font-size: 20px;
+        width: 60%;
+        margin-bottom: 25px;
+      }
+
+      .btns{
+        display: flex;
+        flex-direction: column;
+      }
+    
+      .btn-compra {
+        margin-bottom: 10px;
+      }
+    
+      .glow-on-hover {
+        width: 220px;
+        height: 50px;
+        border: none;
+        outline: none;
+        color: #fff;
+        background: #111;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border-radius: 10px;
+        margin-top: auto;
+        left: auto;
+        right: auto;
+      }
+    
+      .glow-on-hover:before {
+        content: "";
+        background: linear-gradient(
+          45deg,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff,
+          #000000,
+          #ffffff
+        );
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glowing 20s linear infinite;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+    
+      .glow-on-hover:active {
+        color: #000;
+      }
+    
+      .glow-on-hover:active:after {
+        background: transparent;
+        color: #ffffff;
+      }
+    
+      .glow-on-hover:hover:before {
+        opacity: 1;
+      }
+    
+      .glow-on-hover:after {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #181717;
+        left: 0;
+        top: 0;
+        border-radius: 10px;
+      }
+    
+      @keyframes glowing {
+        0% {
+          background-position: 0 0;
+        }
+        50% {
+          background-position: 400% 0;
+        }
+        100% {
+          background-position: 0 0;
+        }
+      }
 }
 
 @font-face {

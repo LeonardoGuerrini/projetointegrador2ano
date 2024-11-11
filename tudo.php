@@ -29,7 +29,6 @@
     />
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="page.css" />
-    <link rel="stylesheet" href="pag.css">
   </head>
   <body>
   <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">

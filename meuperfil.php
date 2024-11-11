@@ -106,13 +106,46 @@ if (!isset($_SESSION['id'])) {
   </nav>
 
   <section class="principal">
+    <?php
+      include('conexao.php');
+      $conn = new mysqli($host, $username, $senha, $dbname); // Conexão com o banco de dados
+      
+      $sql = "SELECT nome, usuario, email, dataNs, numeroTel, cpf, endereco, cep FROM cadastro WHERE id = ?"; // Ajuste a consulta para pegar um usuário específico (usando um ID, por exemplo)
+      $stmt = $conn->prepare($sql);
+      $id_usuario = $_SESSION['id']; // Exemplo de ID de usuário (você pode alterar dinamicamente, dependendo do que você deseja)
+      $stmt->bind_param("i", $id_usuario); // Vincula o ID à consulta
+      $stmt->execute();
+      $resultado = $stmt->get_result();
+      $usuario = $resultado->fetch_assoc();
+    ?>
     <div>
       <div>
-        <img src="Img/" alt="">
-        <p>Nome e sobrenome</p>
-        <p>Email</p>
-        <p>Telefone</p>
-        <p>Endereço</p>
+        <div>
+          <img src="Img/" alt="">
+        </div>        
+        <label for="nome">Nome Completo</label>
+        <p id="nome"><?php echo $usuario['nome']; ?></p>
+
+        <label for="usuario">Usuário</label>
+        <p id="usuario"><?php echo $usuario['usuario']; ?></p>
+
+        <label for="email">Email</label>
+        <p id="email"><?php echo $usuario['email']; ?></p>
+
+        <label for="dataNs">Data de Nascimento</label>
+        <p id="dataNs"><?php echo $usuario['dataNs']; ?></p>
+
+        <label for="numeroTel">Telefone</label>
+        <p id="numeroTel"><?php echo $usuario['numeroTel']; ?></p>
+
+        <label for="cpf">CPF</label>
+        <p id="cpf"><?php echo $usuario['cpf']; ?></p>
+
+        <label for="endereco">Endereço</label>
+        <p id="endereco"><?php echo $usuario['endereco']; ?></p>
+
+        <label for="cep">CEP</label>
+        <p id="cep"><?php echo $usuario['cep']; ?></p>
       </div>
     </div>
   </section>

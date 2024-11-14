@@ -233,12 +233,12 @@
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active fixtext" data-bs-interval="10000">
             <img
               src="Img/oprincipe.svg"
               class="d-block w-10"
               alt="Pequeno Príncipe 1" />
-            <div class="carousel-caption d-md-block">
+            <div class="carousel-caption d-md-block ">
               <h5>Pequeno Príncipe</h5>
               <p>R$31,29</p>
               <button class="btnComprarCard">
@@ -247,7 +247,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item fixtext" data-bs-interval="2000">
             <img
               src="Img/itacoisa.svg"
               class="d-block w-10"
@@ -261,7 +261,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item fixtext">
             <img
               src="Img/fahrenheit451.svg"
               class="d-block w-10"
@@ -299,7 +299,7 @@
 
     <div class="divCategorias">
       <h2 class="h2Cards">Mangás</h2>
-      <a href="tudo.php" class="vertudo">Ver Tudo</a>
+      <a href="mangas.php" class="vertudo">Ver Tudo</a>
       <div id="carouselCategorias2" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
           <button
@@ -321,7 +321,7 @@
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active fixtext" data-bs-interval="10000">
             <img
               src="Img/chainsawmanvol1.svg"
               class="d-block w-10"
@@ -335,7 +335,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item fixtext" data-bs-interval="2000">
             <img
               src="Img/berserk.svg"
               class="d-block w-10"
@@ -349,7 +349,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item fixtext">
             <img
               src="Img/demonslayervol1.svg"
               class="d-block w-10"
@@ -387,7 +387,7 @@
 
     <div class="divCategorias">
       <h2 class="h2Cards">Finanças e Investimentos</h2>
-      <a href="tudo.php" class="vertudo">Ver Tudo</a>
+      <a href="investimento.php" class="vertudo">Ver Tudo</a>
       <div id="carouselCategorias3" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
           <button
@@ -423,7 +423,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item fixtext" data-bs-interval="2000">
             <img
               src="Img/Pai Rico, Pai Pobre.svg"
               class="d-block w-10"
@@ -437,7 +437,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item fixtext">
             <img
               src="Img/A arte da persuasão.svg"
               class="d-block w-10"
@@ -473,7 +473,7 @@
 
     <div class="divCategorias">
       <h2 class="h2Cards">Autoajuda</h2>
-      <a href="tudo.php" class="vertudo">Ver Tudo</a>
+      <a href="autoajuda.php" class="vertudo">Ver Tudo</a>
       <div id="carouselCategorias4" class="carousel carousel-dark slide">
         <div class="carousel-indicators">
           <button
@@ -495,7 +495,7 @@
             aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
+          <div class="carousel-item active fixtext" data-bs-interval="10000">
             <img
               src="Img/Invista em imóveis com pouco dinheiro.svg"
               class="d-block w-10"
@@ -509,7 +509,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
+          <div class="carousel-item fixtext" data-bs-interval="2000">
             <img
               src="Img/Pai Rico, Pai Pobre.svg"
               class="d-block w-10"
@@ -523,7 +523,7 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item fixtext">
             <img
               src="Img/A arte da persuasão.svg"
               class="d-block w-10"

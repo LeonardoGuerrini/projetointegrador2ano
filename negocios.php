@@ -168,7 +168,7 @@
           <div class="div-cards">
             <img src="Img/Deixedeserpobre.jpg" alt="Sakamoto Days Volume 03">
             <div class="card-texto">
-              <h6 class="card-titulo">Deix de ser Pobre</h6>
+              <h6 class="card-titulo">Deixe de ser Pobre</h6>
               <p class="card-valor">R$21,89</p>
               <button class="btnComprarCard">
                 <a href="#" class="classComprarCard"

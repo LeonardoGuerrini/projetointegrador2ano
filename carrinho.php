@@ -107,7 +107,6 @@ if (!isset($_SESSION['id'])) {
 
   <section>
     <div>
-      <img src="Img/berserk.svg" alt="Berserk Volume 01">
       <p>Berserk Volume 01</p>
       <p>Quantidade:</p>
       <p>Valor do produto:</p>

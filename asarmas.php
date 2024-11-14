@@ -96,10 +96,10 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
       <p class="desc" style="color: rgb(0, 0, 0);">
         Depois de passar anos caindo na lábia de vendedores, arrecadadores de doações e operadores de telemarketing, o psicólogo Robert B. Cialdini resolveu se dedicar ao estudo da persuasão.</p>
       <div class="btns">
-        <a href="#">
+        <a href="carrinho.php">
           <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="#">
+        <a href="carrinho.php">
           <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>

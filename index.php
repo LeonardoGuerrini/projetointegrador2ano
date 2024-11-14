@@ -532,7 +532,7 @@
               <h5>A Sutil Arte de Ligar o Foda-se</h5>
               <p>R$38,13</p>
               <button class="btnComprarCard">
-                <a href="#" class="classComprarCard">Comprar
+                <a href="asutilartedofds.php" class="classComprarCard">Comprar
                   <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a>
               </button>
             </div>

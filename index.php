@@ -497,11 +497,11 @@
         <div class="carousel-inner">
           <div class="carousel-item active fixtext" data-bs-interval="10000">
             <img
-              src="Img/Invista em imóveis com pouco dinheiro.svg"
+              src="Img/umdiasemreclamar.svg"
               class="d-block w-10"
               alt="Invista em imóveis com pouco dinheiro" />
             <div class="carousel-caption d-md-block">
-              <h5>Invista em imóveis com pouco dinheiro</h5>
+              <h5>Um dia sem Reclamar</h5>
               <p>R$34,90</p>
               <button class="btnComprarCard">
                 <a href="invistaemimoveis.php" class="classComprarCard">Comprar
@@ -511,11 +511,11 @@
           </div>
           <div class="carousel-item fixtext" data-bs-interval="2000">
             <img
-              src="Img/Pai Rico, Pai Pobre.svg"
+              src="Img/O Milagre da Manha.svg"
               class="d-block w-10"
               alt="Pai Rico, Pai Pobre" />
             <div class="carousel-caption d-md-block">
-              <h5>Pai Rico, Pai Pobre</h5>
+              <h5>O Milagre da Manhã</h5>
               <p>R$41,27</p>
               <button class="btnComprarCard">
                 <a href="pairico.php" class="classComprarCard">Comprar
@@ -525,11 +525,11 @@
           </div>
           <div class="carousel-item fixtext">
             <img
-              src="Img/A arte da persuasão.svg"
+              src="Img/asutilarte.svg"
               class="d-block w-10"
               alt="A Arte da Persuasão" />
             <div class="carousel-caption d-md-block">
-              <h5>A Arte da Persuasão</h5>
+              <h5>A Sutil Arte de Ligar o Foda-se</h5>
               <p>R$38,13</p>
               <button class="btnComprarCard">
                 <a href="#" class="classComprarCard">Comprar
@@ -576,6 +576,7 @@
       <a href="#" class="footer-item">Notificação de Privacidade</a>
       <a href="#" class="footer-item">Cookies</a>
       <a href="#" class="footer-item">Anúncios Baseados e Interesses</a>
+      <a href="acessorestrito.php" class="footer-item">Acesso Restrito</a>
     </div>
     <div class="footer-p">
       <p>© 2020-2024 Wissen.com, Inc. ou suas afiliadas.</p>

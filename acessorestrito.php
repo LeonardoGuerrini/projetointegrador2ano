@@ -1,7 +1,11 @@
 <?php
   session_start(); // Inicia a sessão, ou retoma uma sessão existente
+  // Verifica se a variável de sessão 'id' está definida
+  if (!isset($_SESSION['id']) || $_SESSION['usuario'] !== 'leozera') {
+    header("Location: index.php"); // Redireciona para a página de login se não estiver logado
+    exit(); // Para a execução do script após o redirecionamento
+  }
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -89,23 +93,7 @@
   </nav>
 
   <section>
-    <img src="Img/itacoisa.svg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        It a Coisa.
-      </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Um palhaço assassino
-      </p>
-      <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar Agora</button>
-        </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Adicionar ao Carrinho</button>
-        </a>
-      </div>
-    </div>
+    
   </section>
 
 

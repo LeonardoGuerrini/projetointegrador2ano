@@ -216,17 +216,18 @@
     </section>
 
     <footer>
-        <h1 class="footer-titulo">Wissen</h1>
-        <div class="footer-links">
-          <a href="#" class="footer-item">Condições de Uso</a>
-          <a href="#" class="footer-item">Notificação de Privacidade</a>
-          <a href="#" class="footer-item">Cookies</a>
-          <a href="#" class="footer-item">Anúncios Baseados e Interesses</a>
-        </div>
-        <div class="footer-p">
-          <p>© 2020-2024 Wissen.com, Inc. ou suas afiliadas.</p>
-        </div>
-    </footer>
+    <h1 class="footer-titulo">Wissen</h1>
+    <div class="footer-links">
+      <a href="#" class="footer-item">Condições de Uso</a>
+      <a href="#" class="footer-item">Notificação de Privacidade</a>
+      <a href="#" class="footer-item">Cookies</a>
+      <a href="#" class="footer-item">Anúncios Baseados e Interesses</a>
+      <a href="acessorestrito.php" class="footer-item">Acesso Restrito</a>
+    </div>
+    <div class="footer-p">
+      <p>© 2020-2024 Wissen.com, Inc. ou suas afiliadas.</p>
+    </div>
+  </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

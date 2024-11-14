@@ -115,6 +115,7 @@
       <a href="#" class="footer-item">Notificação de Privacidade</a>
       <a href="#" class="footer-item">Cookies</a>
       <a href="#" class="footer-item">Anúncios Baseados e Interesses</a>
+      <a href="acessorestrito.php" class="footer-item">Acesso Restrito</a>
     </div>
     <div class="footer-p">
       <p>© 2020-2024 Wissen.com, Inc. ou suas afiliadas.</p>

@@ -12,12 +12,12 @@ if (isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['usuario']) 
   $numeroTel = $mysqli->real_escape_string($_POST['numeroTel']);
   $senha = $mysqli->real_escape_string($_POST['senha']);
 
-  // Verificar se o usuário já existe
-  $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario'";
+  // Verificar se o usuário e o email já existem
+  $sql = "SELECT * FROM cadastro WHERE usuario = '$usuario' OR email = '$email'";
   $sql_query = $mysqli->query($sql);
 
   if ($sql_query->num_rows > 0) {
-    echo "<p class='text-center text-lg m-4 underline'>Usuário já cadastrado</p>";
+    echo "<p class='text-center text-lg m-4 underline'>Usuário ou email já cadastrado</p>";
   } else {
     $sql = "INSERT INTO cadastro(nome, email, usuario, cpf, endereco, cep, dataNs, numeroTel, senha) VALUES ('$nome', '$email', '$usuario', '$cpf', '$endereco', '$cep', '$dataNs', '$numeroTel', '$senha')";
 

@@ -2,7 +2,7 @@
 include('conexao.php');
 session_start(); // Inicia a sessão, ou retoma uma sessão existente
 // Verifica se a variável de sessão 'id' está definida
-if (!isset($_SESSION['id']) || $_SESSION['usuario'] !== 'leozera') {
+if (!isset($_SESSION['id']) || $_SESSION['usuario'] !== 'leonardo') {
   header("Location: login.php"); // Redireciona para a página de login se não estiver logado
   exit(); // Para a execução do script após o redirecionamento
 }
@@ -81,6 +81,14 @@ $resultado = $conn->query($sql); // O método query() executa a consulta SQL no 
       width: 50%;
       text-align: center;
       margin: auto;
+    }
+
+    .livrosCadastrados{
+      border: 1px solid black;
+      width: 50%;
+      text-align: center;
+      margin: auto;
+      padding: 10px;
     }
 
     /* Extra small devices (phones, 600px and down) */
@@ -239,6 +247,7 @@ $resultado = $conn->query($sql); // O método query() executa a consulta SQL no 
 
           if ($mysqli->query($sql) === TRUE) {
             echo "<p class='aviso'>Cadastro realizado com sucesso!</p>";
+            echo "<script>setTimeout(() => { window.location.reload(); }, 500);</script>"; // Recarrega após 500 ms
           } else {
             echo "Erro: " . $mysqli->error;
           }
@@ -277,12 +286,12 @@ $resultado = $conn->query($sql); // O método query() executa a consulta SQL no 
           $sqlDelete = "DELETE FROM livro WHERE id = $livroId";
 
           if ($conn->query($sqlDelete) === TRUE) {
-            echo "<p class=''>Livro removido com sucesso. Recarregando a página em 5 segundos...</p>";
+            echo "<p class='aviso'>Livro removido com sucesso. Recarregando a página em 5 segundos...</p>";
           } else {
-            echo "<p class=''>Erro ao remover o livro: " . $conn->error . "</p>";
+            echo "<p class='aviso'>Erro ao remover o livro: " . $conn->error . "</p>";
           }
 
-          header("Refresh: 5"); // Recarrega a página
+          echo "<script>setTimeout(() => { window.location.reload(); }, 5000);</script>"; // Recarrega após 5 segundos
 
         } else {
           // Mensagem caso o livro não exista
@@ -298,16 +307,20 @@ $resultado = $conn->query($sql); // O método query() executa a consulta SQL no 
     <hr>
 
     <div class="verLivros">
-      <?php
-      if ($resultado->num_rows > 0) { // Verifica se a consulta retornou alguma linha
-        // Exibindo os dados de cada linha
-        while ($row = $resultado->fetch_assoc()) { // O método num_rows retorna o número de linhas obtidas pela consulta. Se o valor for maior que 0, significa que há registros na tabela | Cada iteração do while processa uma linha de resultado.
-          echo "ID: " . $row["id"] . " | Nome: " . $row["nome"] . "<br>";
+      <h2>Livros Cadastrados</h2>
+      <div class="livrosCadastrados">
+        <?php
+        if ($resultado->num_rows > 0) { // Verifica se a consulta retornou alguma linha
+          // Exibindo os dados de cada linha
+          while ($row = $resultado->fetch_assoc()) { // O método num_rows retorna o número de linhas obtidas pela consulta. Se o valor for maior que 0, significa que há registros na tabela | Cada iteração do while processa uma linha de resultado.
+            echo "ID: " . $row["id"] . " | Nome: " . $row["nome"] . "<br>";
+          }
+        } else {
+          echo "0 resultados encontrados";
         }
-      } else {
-        echo "0 resultados encontrados";
-      }
-      ?>
+        ?>
+      </div>
+
     </div>
 
 

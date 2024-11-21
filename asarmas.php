@@ -8,7 +8,7 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - As Armas da Persuasão</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -69,10 +69,6 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
           </ul>
         </div>
 
-        <?php
-
-        ?>
-
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -87,16 +83,21 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
     </div>
   </nav>
 
-  <section>
-    <img src="Img/AsArmasDaPersuasao.jpg" alt="As Armas da Persuasão" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        As Armas da Persuasão
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">As Armas da Persuasão</p>
+      <img src="Img/AsArmasDaPersuasao.jpg" alt="As Armas da Persuasão" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">Depois de passar anos caindo na lábia de vendedores, arrecadadores de doações e operadores de telemarketing, o psicólogo Robert B. Cialdini resolveu se dedicar ao estudo da persuasão. Ele queria entender quais são os fatores que levam uma pessoa a dizer "sim" a um pedido e que técnicas exploram melhor esses fatores.
+
+        Reunindo dados das mais recentes pesquisas científicas sobre o assunto, his­tórias de gente comum e a experiência adquirida ao se infiltrar em organizações que treinam os chamados "profissionais da persuasão", Cialdini criou uma obra acessível, informativa e indispensável a todos aqueles que querem saber como influenciar pessoas e, ao mesmo tempo, se defender dos manipuladores.
+
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Depois de passar anos caindo na lábia de vendedores, arrecadadores de doações e operadores de telemarketing, o psicólogo Robert B. Cialdini resolveu se dedicar ao estudo da persuasão.</p>
+      <p class="valor-produto">R$26,49</p>
       <div class="btns">
-        <a href="carrinho.php">
+        <a href="carrinho.php?action=comprar&id=01">
           <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
         <a href="carrinho.php">
@@ -107,10 +108,9 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
   </section>
 
   <?php
-    
+
 
   ?>
-
 
 
 

@@ -1,5 +1,5 @@
 <?php
-  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
 ?>
 
 
@@ -9,7 +9,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - Na Raça</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -87,20 +87,25 @@
       </div>
     </div>
   </nav>
-  <section>
-    <img src="Img/NaRaça.jpg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        Na Raça.
+
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">Na raça</p>
+      <img src="Img/Na Raça.jpg" alt="Na raça" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">Uma das mais bem-sucedidas histórias de empreendedorismo do Brasil começou com uma demissão. Em 2001, Guilherme Benchimol iniciava sua carreira no mercado financeiro carioca quando perdeu o emprego. Envergonhado, decidiu fugir do Rio de Janeiro: pegou o carro e dirigiu quase 20 horas até Porto Alegre, onde, longe dos principais centros financeiros do país, fundou uma modesta empresa de investimentos, a XP, numa salinha de 25 metros quadrados.
+
+        Hoje, a XP vale dezenas de bilhões de reais ― e Guilherme é multibilionário. Maria Luíza Filgueiras acompanhou a XP por nove anos como jornalista e entrevistou dezenas de executivos, incluindo o próprio Guilherme, para narrar os detalhes dessa trajetória de sucesso, também marcada por muitos momentos de dificuldade. Nos primeiros anos, o fundador topava qualquer coisa para evitar a falência. Panfletou nos bairros chiques de Porto Alegre, vendeu o carro para pagar as contas, pediu dinheiro para amigos. Nos anos seguintes, trocou sócios, engordou, emagreceu, quase pifou. Foi tudo, como ele mesmo costuma dizer, “na raça”.
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Uma das mais bem-sucedidas histórias de empreendedorismo do Brasil começou com uma demissão. </p>
+      <p class="valor-produto">R$29,99</p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

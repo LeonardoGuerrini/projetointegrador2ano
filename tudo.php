@@ -9,7 +9,7 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wissen Livraria - Mangás</title>
+  <title>Wissen Livraria - Todos os Livros</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     rel="stylesheet" />
@@ -204,7 +204,7 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
         <img src="Img/Pai Rico, Pai Pobre.svg" alt="Pai Rico, Pai Pobre">
         <div class="card-texto">
           <h6 class="card-titulo" style="margin-top: 8px;">Pai Rico, Pai Pobre</h6>
-          <p class="card-valor">R$29,99</p>
+          <p class="card-valor">R$36,87</p>
           <button class="btnComprarCard">
             <a href="pairico.php" class="classComprarCard">Comprar
               <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a>
@@ -336,7 +336,7 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
         <img src="Img/itacoisa.svg" alt="It: A Coisa">
         <div class="card-texto">
           <h6 class="card-titulo">It: A Coisa</h6>
-          <p class="card-valor">R$34,90</p>
+          <p class="card-valor">R$R$84,58</p>
           <button class="btnComprarCard">
             <a href="itacoisa.php" class="classComprarCard">Comprar
               <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a>
@@ -351,6 +351,18 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
           <p class="card-valor">R$34,90</p>
           <button class="btnComprarCard">
             <a href="#" class="classComprarCard">Comprar
+              <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a>
+          </button>
+        </div>
+      </div>
+
+      <div class="div-cards">
+        <img src="Img/asutilarte.svg" alt="A Sútil Arte de Ligar o F*da-se">
+        <div class="card-texto">
+          <h6 class="card-titulo">A Sútil Arte de Ligar o F*da-se</h6>
+          <p class="card-valor">R$38,13</p>
+          <button class="btnComprarCard">
+            <a href="asutilartedofds.php" class="classComprarCard">Comprar
               <span class="material-symbols-outlined shopping_cart">add_shopping_cart</span></a>
           </button>
         </div>

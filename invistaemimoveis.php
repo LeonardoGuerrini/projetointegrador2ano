@@ -9,7 +9,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - Invista em imóveis com pouco dinheiro</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -88,21 +88,23 @@
     </div>
   </nav>
 
-  <section>
-    <img src="Img/Invista em imóveis com pouco dinheiro.svg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        Invista em Imoveis com Pouco Dinheiro.
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">Invista em imóveis com pouco dinheiro</p>
+      <img src="Img/Invista em imóveis com pouco dinheiro.svg" alt="Invista em imóveis com pouco dinheiro" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">Neste guia prático e completo, Gabriel Porto ensina passo a passo, cada detalhe da sua jornada como investidor. Independente da sua idade ou se você tem pouco dinheiro para investir, este livro te ajudará a criar um plano para antecipar em até 30 anos a sua aposentadoria sem depender do INSS. Bom senso, disciplina, gestão de risco, conhecimento e tempo. Gabriel não usa fórmulas mágicas, mas ajuda a construir um propósito de longo prazo com pilares sólidos.
+
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Invista em Imoveis com Pouco Dinheiro.
-      </p>
+      <p class="valor-produto">R$34,90</p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

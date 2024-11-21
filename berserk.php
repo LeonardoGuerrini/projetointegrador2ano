@@ -1,5 +1,5 @@
 <?php
-  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - Berserk Volume 01</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -87,20 +87,23 @@
     </div>
   </nav>
 
-  <section>
-    <img src="berserk.svg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        Berserk
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">Berserk Volume 01</p>
+      <img src="Img/berserk.svg" alt="Berserk Volume 01" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">O misterioso Guts, o "Espadachim Negro", carrega em sua mão mecânica uma enorme espada, e em seu pescoço uma estranha marca que atrai forças demoníacas. Em sua busca por vingança contra um antigo inimigo, nem tudo sai a seu favor, e ele recebe ajuda de uma fantástica criatura.
+
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-      </p>
+      <p class="valor-produto">R$29,99</p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

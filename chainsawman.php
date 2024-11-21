@@ -1,6 +1,14 @@
 <?php
-  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
+include('conexao.php');
+
+
+if(isset($_POST["btnComprar"]) || isset($_POST["btnAdicionar"])){
+  
+}
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -8,7 +16,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - Chainsaw Man Volume 01</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -87,22 +95,33 @@
     </div>
   </nav>
 
-  <section>
-    <img src="Img/chainsawmanvol1.svg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        Chainsaw Man Vol.1
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">Chainsaw Man Volume 01</p>
+      <img src="Img/chainsawmanvol1.svg" alt="Chainsaw Man Volume 01" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">Denji é um jovem extremamente pobre que junto de Pochita, seu demônio de estimação, trabalha feito um condenado como Caçador de Demônios para pagar a imensa dívida que possui. Mas sua vida de miséria está prestes a mudar graças a uma traição brutal!! Aqui começa a história de um novo anti-herói que com um demônio em seu corpo, caça demônios!!
+
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Em um mundo onde demonios são reais, Tanjirou um vendedor de carvão tende a ter aventuras incriveis.</p>
+      <p class="valor-produto">R$27,70</p>
+
+
+
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
-        </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
-        </a>
+        <form action="carrinho.php" method="POST" style="display:inline;">
+          <input type="submit" value="Comprar" id="btnComprar" class="btn-compra glow-on-hover">
+        </form>
+
+        <form action="carrinho.php" method="POST" style="display:inline;">
+          <input type="submit" value="Adicionar ao Carrinho" id="btnAdicionar" class="btn-compra glow-on-hover">
+        </form>
       </div>
+
+
+
+
     </div>
   </section>
 

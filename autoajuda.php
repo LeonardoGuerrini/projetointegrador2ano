@@ -109,7 +109,7 @@
         </ul>
     </div>
 
-    <section class="principal">
+    <section class="content principal">
       <h2>Autoajuda</h2>
       <div class="principal-div">
         

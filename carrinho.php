@@ -1,10 +1,47 @@
 <?php
-session_start(); // Inicia a sessão, ou retoma uma sessão existente
-// Verifica se a variável de sessão 'id' está definida
+session_start();
+
 if (!isset($_SESSION['id'])) {
-  header("Location: index.php"); // Redireciona para a página de login se não estiver logado
-  exit(); // Para a execução do script após o redirecionamento
+  header("Location: login.php");
+  exit();
 }
+
+class Carrinho{
+  
+  public function add(Product $produto){
+
+    $noCarrinho = false;
+
+    if(count($this->getCarrinho()['produtos']) > 0){
+      foreach($this->getCarrinho()['produtos'] as $produtoNoCarrinho){
+        if($produtoNoCarrinho->getId() === $produto->getId()){
+          $estoque = $produtoNoCarrinho->getEstoque() + $produto->getEstoque();
+          $produtoNoCarrinho->setEstoque($estoque);
+          $noCarrinho = true;
+          break;
+        }
+      }
+    }
+
+    if(!$noCarrinho){
+      $this->setProdutosNoCarrinho($produto);
+    }
+
+  }
+
+  private function setProdutosNoCarrinho($produto){
+    $this->getCarrinho()['produtos'] = $produto
+  }
+
+  public function remover(){}
+
+  public function getCarrinho(){
+    return $_SESSION['carrinho'] ?? [];
+  }
+
+
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -13,7 +50,7 @@ if (!isset($_SESSION['id'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wissen Livraria - Início</title>
+  <title>Wissen Livraria - Carrinho</title>
   <link
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
     rel="stylesheet" />
@@ -105,18 +142,15 @@ if (!isset($_SESSION['id'])) {
     </div>
   </nav>
 
-  <section>
+  <section class="content">
     <div>
-      <p>Berserk Volume 01</p>
-      <p>Quantidade:</p>
-      <p>Valor do produto:</p>
+      <?php
+      
+      ?>
+
     </div>
     <div>
       <form action="" method="post">
-        <input type="number" name="cep" id="cep" pattern="\d{5}-?\d{3}" required>
-        <button>Calcular Frete</button>
-        <p>Valor do Frete:</p>
-        <p>Valor Total:</p>
         <h2>Método de Pagamento</h2>
         <label for="cartaoCred">Cartão de Crédito</label>
         <input type="radio" name="metodoPag" id="cartaoCred" value="Cartão de Crédito">

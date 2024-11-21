@@ -1,5 +1,5 @@
 <?php
-  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
 ?>
 
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - Demon Slayer Volume 01</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -87,20 +87,25 @@
     </div>
   </nav>
 
-  <section>
-    <img src="demonslayervol1.svg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        Demon Slayer Vol.1
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">Demon Slayer Volume 01</p>
+      <img src="Img/demonslayervol1.svg" alt="Demon Slayer Volume 01" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">Produto em pré-venda, tendo início de postagem a partir da 2º quinzena do mês de Março/20! Estamos na Era Taishou. O dia-a-dia pacato de Tanjiro, um gentil garoto que vende carvão, se transforma radicalmente quando sua família é assassinada por um demônio. A única sobrevivente é Nezuko, sua irmã mais nova. Porém, agora, ela se transformou em um Oni. Diante dessa tragédia, os dois irmãos partem em uma jornada para derrotar o Oni que matou sua mãe e irmãozinhos. E assim tem início uma aventura sanguinolenta de espadachins!
+
+
+
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Em um mundo onde demonios são reais, Tanjirou um vendedor de carvão tende a ter aventuras incriveis.</p>
+      <p class="valor-produto">R$26,49</p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

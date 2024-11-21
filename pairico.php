@@ -1,5 +1,5 @@
 <?php
-  session_start(); // Inicia a sessão, ou retoma uma sessão existente
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
 ?>
 
 
@@ -9,7 +9,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wissen Livraria - Login</title>
+  <title>Wissen Livraria - Pai Rico, Pai Pobre</title>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
@@ -88,21 +88,26 @@
     </div>
   </nav>
 
-  <section>
-    <img src="Img/Pai Rico, Pai Pobre.svg" alt="" class="comprar">
-    <div class="text-desc">
-      <p class="produto">
-        Pai Rico, Pai Pobre
+  <section class="content">
+    <div class="div-titulo-img">
+      <p class="titulo-produto">Pai Rico, Pai Pobre</p>
+      <img src="Img/Pai Rico, Pai Pobre.svg" alt="Pai Rico, Pai Pobre" class="img-comprar">
+    </div>
+
+    <div class="div-descricao">
+      <p class="descricao" style="color: rgb(0, 0, 0);">A escola prepara as crianças para o mundo real? Essa é a primeira pergunta com a qual o leitor se depara neste livro. O recado é ousado e direto: boa formação e notas altas não bastam para assegurar o sucesso de alguém. O mundo mudou; a maioria dos jovens tem cartão de crédito, antes mesmo de concluir os estudos, e nunca teve aula sobre dinheiro, investimentos, juros etc. Ou seja, eles vão para a escola, mas continuam financeiramente improficientes, despreparados para enfrentar um mundo que valoriza mais as despesas do que a poupança.
+
+        Para o autor, o conselho mais perigoso que se pode dar a um jovem nos dias de hoje é: “Vá para a escola, tire notas altas e depois procure um trabalho seguro.” O fato é que agora as regras são outras, e não existe mais emprego garantido para ninguém. Pai Rico, Pai Pobre demonstra que a questão não é ser empregado ou empregador, mas ter o controle do próprio destino ou delegá-lo a alguém. É essa a tese de Robert Kiyosaki neste livro substancial e visionário. Para ele, a formação proporcionada pelo sistema educacional não prepara os jovens para o mundo que encontrarão depois de formados.
+
+
       </p>
-      <p class="desc" style="color: rgb(0, 0, 0);">
-        Pai Rico, Pai Pobre
-      </p>
+      <p class="valor-produto">R$36,87</p>
       <div class="btns">
-        <a href="#">
-          <button class="btn-compra" type="button">Comprar</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="#">
-          <button class="btn-compra" type="button">Carrinho</button>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
         </a>
       </div>
     </div>

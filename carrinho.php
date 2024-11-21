@@ -109,48 +109,51 @@ if (!isset($_SESSION['id'])) {
   </nav>
 
   <section class="content">
-    <form action="" method="post">
-      <?php
-      // Consulta SQL
-      $sql = "SELECT id, nome, genero, estoque, valor FROM livro";
+    <?php
+    // Consulta SQL
+    $sql = "SELECT id, nome, genero, estoque, valor FROM livro";
 
-      // Executa a consulta
-      $result = $mysqli->query($sql);
+    // Executa a consulta
+    $result = $mysqli->query($sql);
 
-      if ($result->num_rows > 0) {
-        echo "<form action='processa.php' method='post'>"; // Formulário para enviar os dados para 'processa.php'
+    if ($result->num_rows > 0) {
+      echo "<form action='processa.php' method='post'>"; // Formulário para enviar os dados para 'processa.php'
 
-        while ($row = $result->fetch_assoc()) {
-          // Exibe os produtos com checkbox e campo numérico para quantidade
-          echo "<div>";
+      while ($row = $result->fetch_assoc()) {
+        // Exibe os produtos com checkbox e campo numérico para quantidade
+        echo "<div>";
 
-          // Adiciona o checkbox com a palavra "Adicionar" ao lado
-          echo "<input type='checkbox' name='produtos[]' value='" . $row["id"] . "'> ";
-          echo "<label>Adicionar</label><br>";  // Texto ao lado do checkbox
+        // Exibe os detalhes do produto
+        echo "Nome: " . $row["nome"] . "<br>";
+        echo "Gênero: " . $row["genero"] . "<br>";
+        echo "Estoque: " . $row["estoque"] . "<br>";
+        echo "Valor: R$ " . number_format($row["valor"], 2, ",", ".") . "<br>";
 
-          // Exibe os detalhes do produto
-          echo "Nome: " . $row["nome"] . "<br>";
-          echo "Gênero: " . $row["genero"] . "<br>";
-          echo "Estoque: " . $row["estoque"] . "<br>";
-          echo "Valor: R$ " . number_format($row["valor"], 2, ",", ".") . "<br>";
-
-          // Campo para definir a quantidade
-          echo "Quantidade: <input type='number' name='quantidade[" . $row["id"] . "]' min='1' max='" . $row["estoque"] . "' value='1'>";
-          echo "</div><hr>";
-        }
-
-        echo "<input type='submit' value='Comprar'>";
-        echo "</form>";
-      } else {
-        echo "Nenhum produto encontrado.";
+        // Campo para definir a quantidade
+        // Adiciona o checkbox com a palavra "Adicionar" ao lado
+        echo "<input type='checkbox' name='produtos[]' value='" . $row["id"] . "'> ";
+        echo "<label>Adicionar</label><br>";  // Texto ao lado do checkbox
+        echo "Quantidade: <input type='number' name='quantidade[" . $row["id"] . "]' min='1' max='" . $row["estoque"] . "' value='1'>";
+        echo "</div><hr>";
       }
 
-      // Fecha a conexão
-      $mysqli->close();
+      echo "<h3>Método de Pagamento</h3>";
+      echo "<input type='radio' name='formaPagamento' id='pix' required";
+      echo "<label> PIX</label><br>";
+      echo "<input type='radio' name='formaPagamento' id='cartaoCredito' required";
+      echo "<label> Cartão de Crédito</label><br><br>";
+
+      echo "<input type='submit' value='Comprar'>";
+      echo "</form>";
+    } else {
+      echo "Nenhum produto encontrado.";
+    }
+
+    // Fecha a conexão
+    $mysqli->close();
 
 
-      ?>
-    </form>
+    ?>
   </section>
 
   <footer>

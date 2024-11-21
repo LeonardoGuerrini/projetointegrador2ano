@@ -1,16 +1,16 @@
 <?php
-// Inclui a conexão com o banco
 include('conexao.php');
+
+$sql = "SELECT id_compra, id_cliente, dtcompra, valortotal, metodo FROM compras";
+$result = $mysqli->query($sql);
 
 // Verifica se o formulário foi enviado via POST
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Verifica se existem produtos selecionados
     if (isset($_POST['produtos']) && isset($_POST['quantidade'])) {
-        // Dados do cliente, aqui você pode pegar da sessão ou outro método
-        $id_cliente = 1;  // Supondo que o ID do cliente seja 1 para exemplo
-        
-        // Método de pagamento, você pode adicionar um campo no formulário ou pegar de algum lugar
-        $metodo = "Cartão de Crédito";  // Exemplo de método de pagamento
+
+        $id_cliente = $_POST['id_cliente'];
+        $metodo = $_POST['formaPagamento'];  // método de pagamento
 
         // Calculando o valor total da compra
         $valor_total = 0;
@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $quantidade = $_POST['quantidade'][$id_produto];
 
             // Consulta para pegar o valor unitário do produto
-            $sql_produto = "SELECT valor FROM produtos WHERE id = ?";
+            $sql_produto = "SELECT valor FROM livro WHERE id = ?";
             $stmt = $mysqli->prepare($sql_produto);
             $stmt->bind_param("i", $id_produto);
             $stmt->execute();
@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $quantidade = $_POST['quantidade'][$id_produto];
 
             // Consulta para pegar o valor unitário do produto
-            $sql_produto = "SELECT valor FROM produtos WHERE id = ?";
+            $sql_produto = "SELECT valor FROM livro WHERE id = ?";
             $stmt = $mysqli->prepare($sql_produto);
             $stmt->bind_param("i", $id_produto);
             $stmt->execute();
@@ -80,4 +80,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Fecha a conexão
 $mysqli->close();
-?>

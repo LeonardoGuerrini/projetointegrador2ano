@@ -115,3 +115,7 @@ a{
 .btn-secondary, .dropdown-menu{
     background-color: rgb(17, 17, 17) !important;
 }
+
+form{
+    margin: 10px;
+}

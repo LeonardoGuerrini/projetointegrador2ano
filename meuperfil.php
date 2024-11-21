@@ -29,9 +29,22 @@ if (!isset($_SESSION['id'])) {
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <style>
+    section{
+      margin-left: 10px;
+      text-align: center;
+      border: 1px solid black;
+      width: 50%;
+      margin: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -105,7 +118,7 @@ if (!isset($_SESSION['id'])) {
     </div>
   </nav>
 
-  <section class="principal">
+  <section class="content principal">
     <?php
       include('conexao.php');
       $conn = new mysqli($host, $username, $senha, $dbname); // Conexão com o banco de dados
@@ -123,28 +136,28 @@ if (!isset($_SESSION['id'])) {
         <div>
           <img src="Img/" alt="">
         </div>        
-        <label for="nome">Nome Completo</label>
+        <h5>Nome Completo</h5>
         <p id="nome"><?php echo $usuario['nome']; ?></p>
 
-        <label for="usuario">Usuário</label>
+        <h5>Usuário</h5>
         <p id="usuario"><?php echo $usuario['usuario']; ?></p>
 
-        <label for="email">Email</label>
+        <h5>Email</h5>
         <p id="email"><?php echo $usuario['email']; ?></p>
 
-        <label for="dataNs">Data de Nascimento</label>
+        <h5>Data de Nascimento</h5>
         <p id="dataNs"><?php echo $usuario['dataNs']; ?></p>
 
-        <label for="numeroTel">Telefone</label>
+        <h5>Telefone</h5>
         <p id="numeroTel"><?php echo $usuario['numeroTel']; ?></p>
 
-        <label for="cpf">CPF</label>
+        <h5>CPF</h5>
         <p id="cpf"><?php echo $usuario['cpf']; ?></p>
 
-        <label for="endereco">Endereço</label>
+        <h5>Endereço</h5>
         <p id="endereco"><?php echo $usuario['endereco']; ?></p>
 
-        <label for="cep">CEP</label>
+        <h5>CEP</h5>
         <p id="cep"><?php echo $usuario['cep']; ?></p>
       </div>
     </div>

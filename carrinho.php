@@ -110,38 +110,33 @@ if (!isset($_SESSION['id'])) {
 
   <section class="content">
     <?php
-    // Consulta SQL
     $sql = "SELECT id, nome, genero, estoque, valor FROM livro";
+    $resultado = $mysqli->query($sql);
 
-    // Executa a consulta
-    $result = $mysqli->query($sql);
+    if ($resultado->num_rows > 0) {
+      echo "<form action='processa.php' method='post'>";
 
-    if ($result->num_rows > 0) {
-      echo "<form action='processa.php' method='post'>"; // Formulário para enviar os dados para 'processa.php'
-
-      while ($row = $result->fetch_assoc()) {
-        // Exibe os produtos com checkbox e campo numérico para quantidade
-        echo "<div>";
+      while ($row = $resultado->fetch_assoc()) {
 
         // Exibe os detalhes do produto
-        echo "Nome: " . $row["nome"] . "<br>";
+        echo "Nome: <b>" . $row["nome"] . "</b><br>";
         echo "Gênero: " . $row["genero"] . "<br>";
-        echo "Estoque: " . $row["estoque"] . "<br>";
-        echo "Valor: R$ " . number_format($row["valor"], 2, ",", ".") . "<br>";
+        echo "Quantidades disponíveis: " . $row["estoque"] . "<br>";
+        echo "Valor: R$ " . number_format($row["valor"], 2, ",", ".") . "<br><br>";
 
-        // Campo para definir a quantidade
-        // Adiciona o checkbox com a palavra "Adicionar" ao lado
         echo "<input type='checkbox' name='produtos[]' value='" . $row["id"] . "'> ";
-        echo "<label>Adicionar</label><br>";  // Texto ao lado do checkbox
-        echo "Quantidade: <input type='number' name='quantidade[" . $row["id"] . "]' min='1' max='" . $row["estoque"] . "' value='1'>";
-        echo "</div><hr>";
+        echo "<label>Adicionar ao carrinho</label><br>";
+        echo "Quantidade: <input type='number' name='estoque[" . $row["id"] . "]' min='1' max='" . $row["estoque"] . "' value='1'>";
+        echo "<input type='hidden' name='preco[" . $row["id"] . "]' value='" . $row["valor"] . "'>";
+        echo "<hr>";
       }
 
       echo "<h3>Método de Pagamento</h3>";
-      echo "<input type='radio' name='formaPagamento' id='pix' required";
-      echo "<label> PIX</label><br>";
-      echo "<input type='radio' name='formaPagamento' id='cartaoCredito' required";
-      echo "<label> Cartão de Crédito</label><br><br>";
+      echo "<input type='radio' name='formaPagamento' id='pix' value='PIX' checked>";
+      echo "<label>PIX</label><br>";
+
+      echo "<input type='radio' name='formaPagamento' id='cartaoCredito' value='Cartão de Crédito'>";
+      echo "<label>Cartão de Crédito</label><br><br>";
 
       echo "<input type='submit' value='Comprar'>";
       echo "</form>";

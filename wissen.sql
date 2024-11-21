@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/11/2024 às 12:15
--- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.2.12
+-- Generation Time: Nov 21, 2024 at 11:19 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Banco de dados: `wissen`
+-- Database: `wissen`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `cadastro`
+-- Table structure for table `cadastro`
 --
 
 CREATE TABLE `cadastro` (
@@ -41,7 +41,7 @@ CREATE TABLE `cadastro` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `cadastro`
+-- Dumping data for table `cadastro`
 --
 
 INSERT INTO `cadastro` (`id`, `nome`, `email`, `usuario`, `cpf`, `endereco`, `cep`, `dataNs`, `numeroTel`, `senha`) VALUES
@@ -50,35 +50,21 @@ INSERT INTO `cadastro` (`id`, `nome`, `email`, `usuario`, `cpf`, `endereco`, `ce
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `carrinho`
---
-
-CREATE TABLE `carrinho` (
-  `id` int(11) NOT NULL,
-  `nomelivro` varchar(50) DEFAULT NULL,
-  `quantidade` int(11) DEFAULT NULL,
-  `valor_unitario` decimal(7,2) DEFAULT NULL,
-  `valor_total` decimal(7,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `compras`
+-- Table structure for table `compras`
 --
 
 CREATE TABLE `compras` (
   `id_compra` int(11) NOT NULL,
   `id_cliente` int(11) DEFAULT NULL,
   `dtcompra` date DEFAULT NULL,
-  `valortotal` decimal(7,1) DEFAULT NULL,
+  `valortotal` decimal(10,2) DEFAULT NULL,
   `metodo` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estrutura para tabela `livro`
+-- Table structure for table `livro`
 --
 
 CREATE TABLE `livro` (
@@ -87,11 +73,11 @@ CREATE TABLE `livro` (
   `descricao` varchar(100) DEFAULT NULL,
   `genero` varchar(40) DEFAULT NULL,
   `estoque` int(11) DEFAULT NULL,
-  `valor` decimal(7,2) DEFAULT NULL
+  `valor` decimal(10,2) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Despejando dados para a tabela `livro`
+-- Dumping data for table `livro`
 --
 
 INSERT INTO `livro` (`id`, `nome`, `descricao`, `genero`, `estoque`, `valor`) VALUES
@@ -105,57 +91,45 @@ INSERT INTO `livro` (`id`, `nome`, `descricao`, `genero`, `estoque`, `valor`) VA
 (15, 'A Sútil Arte de Ligar o F*da-se', 'Chega de tentar buscar um sucesso que só existe na sua cabeça. Chega de se torturar para pensar posi', 'Autoajuda', 50, 38.13);
 
 --
--- Índices para tabelas despejadas
+-- Indexes for dumped tables
 --
 
 --
--- Índices de tabela `cadastro`
+-- Indexes for table `cadastro`
 --
 ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id`);
 
 --
--- Índices de tabela `carrinho`
---
-ALTER TABLE `carrinho`
-  ADD PRIMARY KEY (`id`);
-
---
--- Índices de tabela `compras`
+-- Indexes for table `compras`
 --
 ALTER TABLE `compras`
   ADD PRIMARY KEY (`id_compra`);
 
 --
--- Índices de tabela `livro`
+-- Indexes for table `livro`
 --
 ALTER TABLE `livro`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT para tabelas despejadas
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT de tabela `cadastro`
+-- AUTO_INCREMENT for table `cadastro`
 --
 ALTER TABLE `cadastro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT de tabela `carrinho`
---
-ALTER TABLE `carrinho`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT de tabela `compras`
+-- AUTO_INCREMENT for table `compras`
 --
 ALTER TABLE `compras`
-  MODIFY `id_compra` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_compra` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=97;
 
 --
--- AUTO_INCREMENT de tabela `livro`
+-- AUTO_INCREMENT for table `livro`
 --
 ALTER TABLE `livro`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;

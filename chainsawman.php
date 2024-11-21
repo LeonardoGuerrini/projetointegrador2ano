@@ -1,11 +1,5 @@
 <?php
 session_start(); // Inicia a sessão, ou retoma uma sessão existente
-include('conexao.php');
-
-
-if(isset($_POST["btnComprar"]) || isset($_POST["btnAdicionar"])){
-  
-}
 
 ?>
 
@@ -110,13 +104,9 @@ if(isset($_POST["btnComprar"]) || isset($_POST["btnAdicionar"])){
 
 
       <div class="btns">
-        <form action="carrinho.php" method="POST" style="display:inline;">
-          <input type="submit" value="Comprar" id="btnComprar" class="btn-compra glow-on-hover">
-        </form>
-
-        <form action="carrinho.php" method="POST" style="display:inline;">
-          <input type="submit" value="Adicionar ao Carrinho" id="btnAdicionar" class="btn-compra glow-on-hover">
-        </form>
+        <a href="carrinho.php">
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
+        </a>
       </div>
 
 

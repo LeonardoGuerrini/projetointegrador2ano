@@ -103,9 +103,6 @@
         <a href="carrinho.php">
           <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
-        <a href="carrinho.php">
-          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
-        </a>
       </div>
     </div>
   </section>

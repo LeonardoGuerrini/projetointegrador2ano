@@ -97,11 +97,8 @@ session_start(); // Inicia a sessão, ou retoma uma sessão existente
       </p>
       <p class="valor-produto">R$26,49</p>
       <div class="btns">
-        <a href="carrinho.php?action=comprar&id=01">
-          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
-        </a>
         <a href="carrinho.php">
-          <button class="btn-compra glow-on-hover" type="button">Adicionar ao Carrinho</button>
+          <button class="btn-compra glow-on-hover" type="button">Comprar</button>
         </a>
       </div>
     </div>

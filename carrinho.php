@@ -1,46 +1,12 @@
 <?php
-session_start();
+session_start(); // Inicia a sessão, ou retoma uma sessão existente
+include('conexao.php');
 
 if (!isset($_SESSION['id'])) {
-  header("Location: login.php");
-  exit();
+  header("Location: login.php"); // Redireciona para a página de login se não estiver logado
+  exit(); // Para a execução do script após o redirecionamento
 }
 
-class Carrinho{
-  
-  public function add(Product $produto){
-
-    $noCarrinho = false;
-
-    if(count($this->getCarrinho()['produtos']) > 0){
-      foreach($this->getCarrinho()['produtos'] as $produtoNoCarrinho){
-        if($produtoNoCarrinho->getId() === $produto->getId()){
-          $estoque = $produtoNoCarrinho->getEstoque() + $produto->getEstoque();
-          $produtoNoCarrinho->setEstoque($estoque);
-          $noCarrinho = true;
-          break;
-        }
-      }
-    }
-
-    if(!$noCarrinho){
-      $this->setProdutosNoCarrinho($produto);
-    }
-
-  }
-
-  private function setProdutosNoCarrinho($produto){
-    $this->getCarrinho()['produtos'] = $produto
-  }
-
-  public function remover(){}
-
-  public function getCarrinho(){
-    return $_SESSION['carrinho'] ?? [];
-  }
-
-
-}
 
 ?>
 
@@ -143,23 +109,48 @@ class Carrinho{
   </nav>
 
   <section class="content">
-    <div>
+    <form action="" method="post">
       <?php
-      
+      // Consulta SQL
+      $sql = "SELECT id, nome, genero, estoque, valor FROM livro";
+
+      // Executa a consulta
+      $result = $mysqli->query($sql);
+
+      if ($result->num_rows > 0) {
+        echo "<form action='processa.php' method='post'>"; // Formulário para enviar os dados para 'processa.php'
+
+        while ($row = $result->fetch_assoc()) {
+          // Exibe os produtos com checkbox e campo numérico para quantidade
+          echo "<div>";
+
+          // Adiciona o checkbox com a palavra "Adicionar" ao lado
+          echo "<input type='checkbox' name='produtos[]' value='" . $row["id"] . "'> ";
+          echo "<label>Adicionar</label><br>";  // Texto ao lado do checkbox
+
+          // Exibe os detalhes do produto
+          echo "Nome: " . $row["nome"] . "<br>";
+          echo "Gênero: " . $row["genero"] . "<br>";
+          echo "Estoque: " . $row["estoque"] . "<br>";
+          echo "Valor: R$ " . number_format($row["valor"], 2, ",", ".") . "<br>";
+
+          // Campo para definir a quantidade
+          echo "Quantidade: <input type='number' name='quantidade[" . $row["id"] . "]' min='1' max='" . $row["estoque"] . "' value='1'>";
+          echo "</div><hr>";
+        }
+
+        echo "<input type='submit' value='Comprar'>";
+        echo "</form>";
+      } else {
+        echo "Nenhum produto encontrado.";
+      }
+
+      // Fecha a conexão
+      $mysqli->close();
+
+
       ?>
-
-    </div>
-    <div>
-      <form action="" method="post">
-        <h2>Método de Pagamento</h2>
-        <label for="cartaoCred">Cartão de Crédito</label>
-        <input type="radio" name="metodoPag" id="cartaoCred" value="Cartão de Crédito">
-        <label for="pix">PIX</label>
-        <input type="radio" name="metodoPag" id="pix" value="PIX">
-        <input type="submit" value="Pagamento">
-      </form>
-
-    </div>
+    </form>
   </section>
 
   <footer>

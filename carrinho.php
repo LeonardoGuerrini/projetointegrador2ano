@@ -1,10 +1,10 @@
 <?php
-session_start(); // Inicia a sessão, ou retoma uma sessão existente
+session_start();
 include('conexao.php');
 
 if (!isset($_SESSION['id'])) {
-  header("Location: login.php"); // Redireciona para a página de login se não estiver logado
-  exit(); // Para a execução do script após o redirecionamento
+  header("Location: login.php"); // redireciona o usuário para a página de login se não estiver logado
+  exit(); 
 }
 
 
@@ -118,7 +118,7 @@ if (!isset($_SESSION['id'])) {
 
       while ($row = $resultado->fetch_assoc()) {
 
-        // Exibe os detalhes do produto
+        // exibe os detalhes do produto
         echo "Nome: <b>" . $row["nome"] . "</b><br>";
         echo "Gênero: " . $row["genero"] . "<br>";
         echo "Quantidades disponíveis: " . $row["estoque"] . "<br>";
@@ -144,7 +144,7 @@ if (!isset($_SESSION['id'])) {
       echo "Nenhum produto encontrado.";
     }
 
-    // Fecha a conexão
+    
     $mysqli->close();
 
 

@@ -23,9 +23,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Calcula o valor total da compra
         foreach ($produtos as $id_produto) {
-            $quantidade = intval($quantidades[$id_produto]); // Quantidade selecionada
-            $preco = floatval($precos[$id_produto]); // Preço do produto
-            $valor_produto = $preco * $quantidade; // Valor total do produto (preço * quantidade)
+            $quantidade = intval($quantidades[$id_produto]); // seleciona a quantidade(estoque disponivel) do produto e insere na variavel 'quantidade'
+            $preco = floatval($precos[$id_produto]); // seleciona o valor do produto e insere na variavel 'preco'
+            $valor_produto = $preco * $quantidade; // valor total do produto (preço * quantidade)
         
             // Consulta para pegar o nome do produto
             $sql_nome_produto = "SELECT nome FROM livro WHERE id = ?";
@@ -36,10 +36,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt_nome_produto->fetch();
             $stmt_nome_produto->close();
         
-            // Atualiza o valor total da compra
+            // atualiza o valor total da compra
             $valortotal += $valor_produto;
         
-            // Exibe o nome do produto comprado, a quantidade e o valor total do produto
+            // exibe o nome do produto comprado, a quantidade e o valor total do produto
             echo "<li>Produto: $nome_produto - Quantidade: $quantidade - Valor: R$ " . number_format($valor_produto, 2, ",", ".") . "</li>";
         }
 
